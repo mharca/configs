@@ -1,0 +1,18 @@
+URxvt.depth: 32
+URxvt.background: rgba:1111/1111/1111/dddd
+#URxvt.background:  [95]#000000 
+urxvt*foreground: white
+#urxvt.font: xft:inconsolata:size=11
+#urxvt.font: xft:Monospace:size=12
+urxvt.font: xft:ubuntu mono:size=12
+urxvt*scrollBar: false
+
+Xft.dpi: 108
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: false
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+Xcursor.theme: Pulse-Glass
