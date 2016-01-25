@@ -43,6 +43,7 @@ alias  g='sh ~/google.sh'
 alias dw='dmesg -l warn'
 alias de='dmesg -l err'
 alias grep='grep --color'
+alias x='sh .startx3.sh'
 
 alias rw='sh ~/resetwifi.sh'
 export VISUAL=emacs
