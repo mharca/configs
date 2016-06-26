@@ -1,0 +1,1600 @@
+;; Object x86/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "x86/"
+  :tables
+  (list
+    (semanticdb-table "dell-rbtn.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_DELL_RBTN_H_" variable (:constant-flag t) nil [646 659])
+            ("notifier_block" type
+               (:prototype t
+                :type "struct")
+                nil [661 683])
+            ("dell_rbtn_notifier_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [717 743]))                  
+                :type "int")
+                nil [685 744])
+            ("dell_rbtn_notifier_unregister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("nb" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [779 805]))                  
+                :type "int")
+                nil [745 806]))          
+      :file "dell-rbtn.h"
+      :pointmax 815
+      :fsize 815
+      :lastmodtime '(22115 59022 581867 854000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_DELL_RBTN_H_")
+          )
+)
+    (semanticdb-table "dell-laptop.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("pr_fmt" variable (:constant-flag t) nil [507 513])
+            ("linux/module.h" include (:system-flag t) nil [544 569])
+            ("linux/kernel.h" include (:system-flag t) nil [570 595])
+            ("linux/init.h" include (:system-flag t) nil [596 619])
+            ("linux/platform_device.h" include (:system-flag t) nil [620 654])
+            ("linux/backlight.h" include (:system-flag t) nil [655 683])
+            ("linux/err.h" include (:system-flag t) nil [684 706])
+            ("linux/dmi.h" include (:system-flag t) nil [707 729])
+            ("linux/io.h" include (:system-flag t) nil [730 751])
+            ("linux/rfkill.h" include (:system-flag t) nil [752 777])
+            ("linux/power_supply.h" include (:system-flag t) nil [778 809])
+            ("linux/acpi.h" include (:system-flag t) nil [810 833])
+            ("linux/mm.h" include (:system-flag t) nil [834 855])
+            ("linux/i8042.h" include (:system-flag t) nil [856 880])
+            ("linux/slab.h" include (:system-flag t) nil [881 904])
+            ("linux/debugfs.h" include (:system-flag t) nil [905 931])
+            ("linux/seq_file.h" include (:system-flag t) nil [932 959])
+            ("acpi/video.h" include (:system-flag t) nil [960 983])
+            ("../../firmware/dcdbas.h" include nil nil [984 1018])
+            ("dell-rbtn.h" include nil nil [1019 1041])
+            ("BRIGHTNESS_TOKEN" variable (:constant-flag t) nil [1051 1067])
+            ("KBD_LED_OFF_TOKEN" variable (:constant-flag t) nil [1081 1098])
+            ("KBD_LED_ON_TOKEN" variable (:constant-flag t) nil [1114 1130])
+            ("KBD_LED_AUTO_TOKEN" variable (:constant-flag t) nil [1146 1164])
+            ("KBD_LED_AUTO_25_TOKEN" variable (:constant-flag t) nil [1180 1201])
+            ("KBD_LED_AUTO_50_TOKEN" variable (:constant-flag t) nil [1217 1238])
+            ("KBD_LED_AUTO_75_TOKEN" variable (:constant-flag t) nil [1254 1275])
+            ("KBD_LED_AUTO_100_TOKEN" variable (:constant-flag t) nil [1291 1313])
+            ("__packed" variable (:type ("calling_interface_buffer" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1438 1557])
+            ("calling_interface_buffer" type
+               (:members 
+                  ( ("" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol classsubparts) [1477 1483])
+                    ("select" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1485 1496])
+                    ("input" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1498 1520])
+                    ("output" variable
+                       (:dereference 1
+                        :typemodifiers ("volatile")
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1522 1545]))                  
+                :type "struct")
+                nil [1438 1557])
+            ("calling_interface_token" type
+               (:members 
+                  ( ("tokenID" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1593 1605])
+                    ("location" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1607 1620])
+                    ("" type
+                       (:members 
+                          ( ("value" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1632 1642])
+                            ("stringlength" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1645 1662]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [1622 1666]))                  
+                :type "struct")
+                nil [1559 1669])
+            ("__packed" variable (:type ("calling_interface_structure" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [1671 1842])
+            ("calling_interface_structure" type
+               (:members 
+                  ( ("header" variable (:type ("dmi_header" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1709 1734])
+                    ("cmdIOAddress" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1736 1753])
+                    ("cmdIOCode" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1755 1768])
+                    ("supportedCmds" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1770 1788])
+                    ("tokens" variable
+                       (:dereference 1
+                        :type ("calling_interface_token" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1790 1830]))                  
+                :type "struct")
+                nil [1671 1842])
+            ("quirk_entry" type
+               (:members 
+                  ( ("touchpad_led" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1866 1882])
+                    ("needs_kbd_timeouts" variable (:type "int") (reparse-symbol classsubparts) [1885 1908])
+                    ("kbd_timeouts" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [2000 2019]))                  
+                :type "struct")
+                nil [1844 2022])
+            ("quirks" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("quirk_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2024 2058])
+            ("quirk_dell_vostro_v130" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.touchpad_led = 1,
+}"
+                :type ("quirk_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2060 2135])
+            ("dmi_matched" function
+               (:arguments 
+                  ( ("dmi" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dmi_system_id" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2167 2199]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [2148 2242])
+            ("quirk_dell_xps13_9333" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.needs_kbd_timeouts = 1,
+	.kbd_timeouts = { 0, 5, 15, 60, 5 * 60, 15 * 60, -1 },
+}"
+                :type ("quirk_entry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2404 2540])
+            ("da_command_address" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2542 2572])
+            ("da_command_code" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2573 2600])
+            ("da_num_tokens" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2601 2626])
+            ("da_tokens" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("calling_interface_token" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2627 2676])
+            ("platform_driver" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.driver = {
+		.name = \"dell-laptop\",
+	}
+}"
+                :type ("platform_driver" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2678 2771])
+            ("platform_device" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("platform_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2773 2820])
+            ("dell_backlight_device" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("backlight_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2821 2875])
+            ("wifi_rfkill" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("rfkill" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2876 2910])
+            ("bluetooth_rfkill" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("rfkill" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2911 2950])
+            ("wwan_rfkill" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("rfkill" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2951 2985])
+            ("force_rfkill" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2986 3011])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("force_rfkill" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3026 3039])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [3040 3045]))                  
+                :type "int")
+                nil [3013 3052])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("force_rfkill" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3070 3083]))                  
+                :type "int")
+                nil [3053 3127])
+            ("__initconst" variable
+               (:default-value "{
+	{
+		.ident = \"Dell laptop\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_CHASSIS_TYPE, \"8\"),
+		},
+	},
+	{
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_CHASSIS_TYPE, \"9\"), /*Laptop*/
+		},
+	},
+	{
+		.ident = \"Dell Computer Corporation\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Computer Corporation\"),
+			DMI_MATCH(DMI_CHASSIS_TYPE, \"8\"),
+		},
+	},
+	{ }
+}"
+                :type "int")
+                nil [3183 3620])
+            ("MODULE_DEVICE_TABLE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dmi" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3641 3645])
+                    ("" variable (:type ("dell_device_table" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3646 3664]))                  
+                :type "int")
+                nil [3621 3665])
+            ("__initconst" variable
+               (:default-value "{
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro V130\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro V130\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro V131\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro V131\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro 3350\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro 3350\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro 3555\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro 3555\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron N311z\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron N311z\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron M5110\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron M5110\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro 3360\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro 3360\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro 3460\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro 3460\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro 3560\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Vostro 3560\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Vostro 3450\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Dell System Vostro 3450\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron 5420\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron 5420\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron 5520\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron 5520\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron 5720\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron 5720\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron 7420\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron 7420\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron 7520\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron 7520\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell Inspiron 7720\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"Inspiron 7720\"),
+		},
+		.driver_data = &quirk_dell_vostro_v130,
+	},
+	{
+		.callback = dmi_matched,
+		.ident = \"Dell XPS13 9333\",
+		.matches = {
+			DMI_MATCH(DMI_SYS_VENDOR, \"Dell Inc.\"),
+			DMI_MATCH(DMI_PRODUCT_NAME, \"XPS13 9333\"),
+		},
+		.driver_data = &quirk_dell_xps13_9333,
+	},
+	{ }
+}"
+                :type "int")
+                nil [3715 7472])
+            ("buffer" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("calling_interface_buffer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7474 7521])
+            ("DEFINE_MUTEX" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("buffer_mutex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7542 7555]))                  
+                :type "int")
+                nil [7522 7556])
+            ("clear_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7583 7588]))                  
+                :type "void")
+                nil [7558 7653])
+            ("get_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7678 7683]))                  
+                :type "void")
+                nil [7655 7732])
+            ("release_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7761 7766]))                  
+                :type "void")
+                nil [7734 7800])
+            ("parse_da_table" function
+               (:arguments 
+                  ( ("dm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dmi_header" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7836 7864]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [7814 8694])
+            ("find_tokens" function
+               (:arguments 
+                  ( ("dm" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dmi_header" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8727 8755])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8756 8768]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [8708 8981])
+            ("find_token_id" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tokenid" variable (:type "int") (reparse-symbol arg-sub-list) [9008 9020]))                  
+                :type "int")
+                nil [8983 9140])
+            ("find_token_location" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tokenid" variable (:type "int") (reparse-symbol arg-sub-list) [9173 9185]))                  
+                :type "int")
+                nil [9142 9290])
+            ("dell_send_request" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("calling_interface_buffer" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9351 9391])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [9392 9401])
+                    ("" variable (:type ("" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [9396 9402])
+                    ("select" variable (:type "int") (reparse-symbol arg-sub-list) [9407 9418]))                  
+                :type ("calling_interface_buffer" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [9292 9732])
+            ("dell_smi_error" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [9767 9777]))                  
+                :type "int")
+                nil [9734 10008])
+            ("dell_rfkill_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13536 13547])
+                    ("blocked" variable (:type "bool") (reparse-symbol arg-sub-list) [13548 13561]))                  
+                :type "int")
+                nil [13509 14420])
+            ("dell_rfkill_update_sw_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rfkill" variable
+                       (:pointer 1
+                        :type ("rfkill" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14504 14526])
+                    ("radio" variable (:type "int") (reparse-symbol arg-sub-list) [14527 14537])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [14543 14554]))                  
+                :type "void")
+                nil [14464 14901])
+            ("dell_rfkill_update_hw_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rfkill" variable
+                       (:pointer 1
+                        :type ("rfkill" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14943 14965])
+                    ("radio" variable (:type "int") (reparse-symbol arg-sub-list) [14966 14976])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [14982 14993])
+                    ("hwswitch" variable (:type "int") (reparse-symbol arg-sub-list) [14994 15007]))                  
+                :type "void")
+                nil [14903 15097])
+            ("dell_rfkill_query" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rfkill" variable
+                       (:pointer 1
+                        :type ("rfkill" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15129 15151])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15152 15163]))                  
+                :type "void")
+                nil [15099 15675])
+            ("dell_rfkill_ops" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	.set_block = dell_rfkill_set,
+	.query = dell_rfkill_query,
+}"
+                :type ("rfkill_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15677 15790])
+            ("dell_laptop_dir" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("dentry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15792 15830])
+            ("dell_debugfs_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("seq_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15861 15880])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15881 15892]))                  
+                :type "int")
+                nil [15832 18985])
+            ("dell_debugfs_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19016 19036])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19037 19055]))                  
+                :type "int")
+                nil [18987 19123])
+            ("dell_debugfs_fops" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	.owner = THIS_MODULE,
+	.open = dell_debugfs_open,
+	.read = seq_read,
+	.llseek = seq_lseek,
+	.release = single_release,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [19125 19305])
+            ("dell_update_rfkill" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ignored" variable
+                       (:pointer 1
+                        :type ("work_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19338 19366]))                  
+                :type "void")
+                nil [19307 20203])
+            ("DECLARE_DELAYED_WORK" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dell_rfkill_work" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20232 20249])
+                    ("" variable (:type ("dell_update_rfkill" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20250 20269]))                  
+                :type "int")
+                nil [20204 20270])
+            ("dell_laptop_i8042_filter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20309 20328])
+                    ("str" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [20329 20347])
+                    ("port" variable
+                       (:pointer 1
+                        :type ("serio" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20357 20376]))                  
+                :type "bool")
+                nil [20272 20722])
+            ("dell_rbtn_notifier_register_func" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20771 20795]))                  
+                :type "int")
+                nil [20724 20796])
+            ("dell_rbtn_notifier_unregister_func" function
+               (:prototype-flag t
+                :function-pointer t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20846 20870]))                  
+                :type "int")
+                nil [20797 20871])
+            ("dell_laptop_rbtn_notifier_call" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("nb" variable
+                       (:pointer 1
+                        :type ("notifier_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20915 20941])
+                    ("action" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [20949 20970])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20971 20982]))                  
+                :type "int")
+                nil [20873 21051])
+            ("dell_laptop_rbtn_notifier" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.notifier_call = dell_laptop_rbtn_notifier_call,
+}"
+                :type ("notifier_block" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21053 21164])
+            ("dell_setup_rfkill" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21202 21207]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [21177 25283])
+            ("dell_cleanup_rfkill" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25317 25322]))                  
+                :type "void")
+                nil [25285 25912])
+            ("dell_send_intensity" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bd" variable
+                       (:pointer 1
+                        :type ("backlight_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25945 25973]))                  
+                :type "int")
+                nil [25914 26366])
+            ("dell_get_intensity" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bd" variable
+                       (:pointer 1
+                        :type ("backlight_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26398 26426]))                  
+                :type "int")
+                nil [26368 26835])
+            ("dell_ops" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	.get_brightness = dell_get_intensity,
+	.update_status  = dell_send_intensity,
+}"
+                :type ("backlight_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [26837 26965])
+            ("touchpad_led_on" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26995 27000]))                  
+                :type "void")
+                nil [26967 27083])
+            ("touchpad_led_off" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27114 27119]))                  
+                :type "void")
+                nil [27085 27202])
+            ("touchpad_led_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("led_cdev" variable
+                       (:pointer 1
+                        :type ("led_classdev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27233 27263])
+                    ("value" variable (:type ("led_brightness" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [27265 27291]))                  
+                :type "void")
+                nil [27204 27360])
+            ("touchpad_led" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.name = \"dell-laptop::touchpad\",
+	.brightness_set = touchpad_led_set,
+	.flags = LED_CORE_SUSPENDRESUME,
+}"
+                :type ("led_classdev" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [27362 27513])
+            ("touchpad_led_init" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27551 27570]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [27526 27625])
+            ("touchpad_led_exit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27657 27662]))                  
+                :type "void")
+                nil [27627 27707])
+            ("kbd_timeout_unit" type
+               (:members 
+                  ( ("KBD_TIMEOUT_SECONDS" variable
+                       (:constant-flag t
+                        :default-value (33115 33116)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33093 33116])
+                    ("KBD_TIMEOUT_MINUTES" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33119 33139])
+                    ("KBD_TIMEOUT_HOURS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33141 33159])
+                    ("KBD_TIMEOUT_DAYS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33161 33178]))                  
+                :type "enum")
+                nil [33068 33181])
+            ("kbd_mode_bit" type
+               (:members 
+                  ( ("KBD_MODE_BIT_OFF" variable
+                       (:constant-flag t
+                        :default-value (33223 33224)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33204 33224])
+                    ("KBD_MODE_BIT_ON" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33227 33243])
+                    ("KBD_MODE_BIT_ALS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33245 33262])
+                    ("KBD_MODE_BIT_TRIGGER_ALS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33264 33289])
+                    ("KBD_MODE_BIT_TRIGGER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33291 33312])
+                    ("KBD_MODE_BIT_TRIGGER_25" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33314 33338])
+                    ("KBD_MODE_BIT_TRIGGER_50" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33340 33364])
+                    ("KBD_MODE_BIT_TRIGGER_75" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33366 33390])
+                    ("KBD_MODE_BIT_TRIGGER_100" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [33392 33417]))                  
+                :type "enum")
+                nil [33183 33420])
+            ("kbd_is_als_mode_bit" variable (:constant-flag t) nil [33430 33449])
+            ("kbd_is_trigger_mode_bit" variable (:constant-flag t) nil [33531 33554])
+            ("kbd_is_level_mode_bit" variable (:constant-flag t) nil [33644 33665])
+            ("kbd_info" type
+               (:members 
+                  ( ("modes" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33766 33776])
+                    ("type" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33778 33786])
+                    ("triggers" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33788 33800])
+                    ("levels" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33802 33812])
+                    ("seconds" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33814 33825])
+                    ("minutes" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33827 33838])
+                    ("hours" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33840 33849])
+                    ("days" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33851 33859]))                  
+                :type "struct")
+                nil [33747 33862])
+            ("kbd_state" type
+               (:members 
+                  ( ("mode_bit" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33884 33896])
+                    ("triggers" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33898 33910])
+                    ("timeout_value" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33912 33929])
+                    ("timeout_unit" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33931 33947])
+                    ("als_setting" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33949 33964])
+                    ("als_value" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33966 33979])
+                    ("level" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [33981 33990]))                  
+                :type "struct")
+                nil [33864 33993])
+            ("kbd_tokens" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	KBD_LED_OFF_TOKEN,
+	KBD_LED_AUTO_25_TOKEN,
+	KBD_LED_AUTO_50_TOKEN,
+	KBD_LED_AUTO_75_TOKEN,
+	KBD_LED_AUTO_100_TOKEN,
+	KBD_LED_ON_TOKEN,
+}"
+                :type "int")
+                nil [33995 34167])
+            ("kbd_token_bits" variable
+               (:typemodifiers ("static")
+                :type ("u16" type (:type "class") nil nil))
+                nil [34169 34195])
+            ("kbd_info" variable
+               (:typemodifiers ("static")
+                :type ("kbd_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [34197 34229])
+            ("kbd_als_supported" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [34230 34260])
+            ("kbd_triggers_supported" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [34261 34296])
+            ("kbd_mode_levels" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("u8" type (:type "class") nil nil))
+                nil [34298 34328])
+            ("kbd_mode_levels_count" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [34329 34362])
+            ("kbd_previous_level" variable
+               (:typemodifiers ("static")
+                :type ("u8" type (:type "class") nil nil))
+                nil [34364 34393])
+            ("kbd_previous_mode_bit" variable
+               (:typemodifiers ("static")
+                :type ("u8" type (:type "class") nil nil))
+                nil [34394 34426])
+            ("kbd_led_present" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [34428 34456])
+            ("kbd_get_info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("kbd_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35126 35148]))                  
+                :type "int")
+                nil [35102 35886])
+            ("kbd_get_max_level" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [35926 35931]))                  
+                :type "unsigned int")
+                nil [35888 36067])
+            ("kbd_get_level" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("kbd_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36094 36118]))                  
+                :type "int")
+                nil [36069 36355])
+            ("kbd_set_level" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("kbd_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36382 36406])
+                    ("level" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36407 36416]))                  
+                :type "int")
+                nil [36357 37025])
+            ("kbd_get_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("kbd_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37052 37076]))                  
+                :type "int")
+                nil [37027 37709])
+            ("kbd_set_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("kbd_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [37736 37760]))                  
+                :type "int")
+                nil [37711 38240])
+            ("kbd_set_state_safe" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable
+                       (:pointer 1
+                        :type ("kbd_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38272 38296])
+                    ("old" variable
+                       (:pointer 1
+                        :type ("kbd_state" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38297 38319]))                  
+                :type "int")
+                nil [38242 38709])
+            ("kbd_set_token_bit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bit" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38740 38747]))                  
+                :type "int")
+                nil [38711 39107])
+            ("kbd_get_token_bit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("bit" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39138 39145]))                  
+                :type "int")
+                nil [39109 39550])
+            ("kbd_get_first_active_token_bit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39594 39599]))                  
+                :type "int")
+                nil [39552 39746])
+            ("kbd_get_valid_token_counts" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39786 39791]))                  
+                :type "int")
+                nil [39748 39830])
+            ("kbd_init_info" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39864 39869]))                  
+                :type "int")
+                nil [39832 41713])
+            ("kbd_init_tokens" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41750 41755]))                  
+                :type "void")
+                nil [41715 41885])
+            ("kbd_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41908 41913]))                  
+                :type "void")
+                nil [41887 42037])
+            ("kbd_led_timeout_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42076 42095])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [42105 42135])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42145 42161])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42162 42175]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [42039 44139])
+            ("kbd_led_timeout_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44177 44196])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44205 44235])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44236 44246]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [44141 44739])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("stop_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44760 44773])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44774 44783])
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44784 44792])
+                    ("" variable (:type ("kbd_led_timeout_show" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44798 44819])
+                    ("" variable (:type ("kbd_led_timeout_store" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44820 44842]))                  
+                :type "int")
+                nil [44741 44843])
+            ("kbd_led_triggers" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	\"keyboard\",
+	\"touchpad\",
+	/*\"trackstick\"*/ NULL, /* NOTE: trackstick is just alias for touchpad */
+	\"mouse\",
+}"
+                :type "char")
+                nil [44845 45006])
+            ("kbd_led_triggers_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45046 45065])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [45076 45106])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45117 45133])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45134 45147]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [45008 47043])
+            ("kbd_led_triggers_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47082 47101])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47111 47141])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [47142 47152]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [47045 47822])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("start_triggers" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47843 47858])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47859 47868])
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47869 47877])
+                    ("" variable (:type ("kbd_led_triggers_show" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47883 47905])
+                    ("" variable (:type ("kbd_led_triggers_store" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47906 47929]))                  
+                :type "int")
+                nil [47824 47930])
+            ("kbd_led_als_enabled_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47973 47992])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [47999 48029])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48036 48052])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48053 48066]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [47932 49007])
+            ("kbd_led_als_enabled_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49049 49068])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49074 49104])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49110 49120]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [49009 49333])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("als_enabled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49354 49366])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49367 49376])
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49377 49385])
+                    ("" variable (:type ("kbd_led_als_enabled_show" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49391 49416])
+                    ("" variable (:type ("kbd_led_als_enabled_store" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49417 49443]))                  
+                :type "int")
+                nil [49335 49444])
+            ("kbd_led_als_setting_store" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49487 49506])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49513 49543])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [49550 49566])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49567 49580]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [49446 49920])
+            ("kbd_led_als_setting_show" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49962 49981])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("device_attribute" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [49987 50017])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50023 50033]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [49922 50177])
+            ("DEVICE_ATTR" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("als_setting" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50198 50210])
+                    ("" variable (:type ("S_IRUGO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50211 50220])
+                    ("" variable (:type ("S_IWUSR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50221 50229])
+                    ("" variable (:type ("kbd_led_als_setting_show" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50235 50260])
+                    ("" variable (:type ("kbd_led_als_setting_store" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50261 50287]))                  
+                :type "int")
+                nil [50179 50288])
+            ("kbd_led_attrs" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	&dev_attr_stop_timeout.attr,
+	&dev_attr_start_triggers.attr,
+	NULL,
+}"
+                :type ("attribute" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [50290 50406])
+            ("kbd_led_group" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	.attrs = kbd_led_attrs,
+}"
+                :type ("attribute_group" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [50408 50489])
+            ("kbd_led_als_attrs" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	&dev_attr_als_enabled.attr,
+	&dev_attr_als_setting.attr,
+	NULL,
+}"
+                :type ("attribute" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [50491 50607])
+            ("kbd_led_als_group" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	.attrs = kbd_led_als_attrs,
+}"
+                :type ("attribute_group" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [50609 50698])
+            ("kbd_led_groups" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+	&kbd_led_group,
+	&kbd_led_als_group,
+	NULL,
+}"
+                :type ("attribute_group" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [50700 50805])
+            ("kbd_led_level_get" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("led_cdev" variable
+                       (:pointer 1
+                        :type ("led_classdev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [50852 50882]))                  
+                :type ("led_brightness" type (:type "enum") nil nil))
+                nil [50807 51435])
+            ("kbd_led_level_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("led_cdev" variable
+                       (:pointer 1
+                        :type ("led_classdev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [51467 51497])
+                    ("value" variable (:type ("led_brightness" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [51507 51533]))                  
+                :type "void")
+                nil [51437 52084])
+            ("kbd_led" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	.name           = \"dell::kbd_backlight\",
+	.brightness_set = kbd_led_level_set,
+	.brightness_get = kbd_led_level_get,
+	.groups         = kbd_led_groups,
+}"
+                :type ("led_classdev" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [52086 52280])
+            ("kbd_led_init" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [52313 52332]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [52293 52687])
+            ("brightness_set_exit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("led_cdev" variable
+                       (:pointer 1
+                        :type ("led_classdev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [52721 52751])
+                    ("value" variable (:type ("led_brightness" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [52756 52782]))                  
+                :type "void")
+                nil [52689 52830])
+            ("kbd_led_exit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [52858 52863]))                  
+                :type "void")
+                nil [52833 52983])
+            ("dell_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [53013 53018]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [52996 55581])
+            ("dell_exit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [55612 55617]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [55595 55995])
+            ("late_initcall" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dell_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56481 56491]))                  
+                :type "int")
+                nil [56467 56492])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dell_exit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56505 56515]))                  
+                :type "int")
+                nil [56493 56516])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [56518 56568])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [56569 56629])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [56630 56681])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [56682 56723])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [56724 56746]))          
+      :file "dell-laptop.c"
+      :pointmax 56747
+      :fsize 56748
+      :lastmodtime '(22115 59022 581867 854000)
+      :unmatched-syntax '((string 56739 . 56744) (string 56701 . 56721) (string 56644 . 56679) (string 56583 . 56627) (string 56532 . 56566) (VOID 55590 . 55594) (STATIC 55583 . 55589) (INT 52992 . 52995) (STATIC 52985 . 52991) (punctuation 52830 . 52831) (INT 52289 . 52292) (STATIC 52282 . 52288) (punctuation 50219 . 50220) (punctuation 49375 . 49376) (punctuation 47867 . 47868) (punctuation 44782 . 44783) (INT 27522 . 27525) (STATIC 27515 . 27521) (INT 21173 . 21176) (STATIC 21166 . 21172) (VOID 8703 . 8707) (STATIC 8696 . 8702) (VOID 7809 . 7813) (STATIC 7802 . 7808) (semantic-list 3712 . 3714) (symbol 3701 . 3712) (symbol 3687 . 3700) (STRUCT 3680 . 3686) (CONST 3674 . 3679) (STATIC 3667 . 3673) (semantic-list 3180 . 3182) (symbol 3163 . 3180) (symbol 3149 . 3162) (STRUCT 3142 . 3148) (CONST 3136 . 3141) (STATIC 3129 . 3135) (string 3084 . 3125) (number 3046 . 3050) (INT 2144 . 2147) (STATIC 2137 . 2143) (symbol 1473 . 1476) (symbol 1473 . 1476))
+      :lexical-table 
+        '(("KBD_LED_AUTO_TOKEN" . ((number "0x01E3" 1165 . 1171)))
+          ("KBD_LED_AUTO_50_TOKEN" . ((number "0x02EB" 1239 . 1245)))
+          ("BRIGHTNESS_TOKEN" . ((number "0x7d" 1068 . 1072)))
+          ("KBD_LED_OFF_TOKEN" . ((number "0x01E1" 1099 . 1105)))
+          ("kbd_is_level_mode_bit" (spp-arg-list ("bit") 33665 . 33670) . ((semantic-list "((bit) >= KBD_MODE_BIT_TRIGGER_25 && (bit) <= KBD_MODE_BIT_TRIGGER_100)" 33674 . 33745)))
+          ("KBD_LED_AUTO_100_TOKEN" . ((number "0x02F6" 1314 . 1320)))
+          ("kbd_is_als_mode_bit" (spp-arg-list ("bit") 33449 . 33454) . ((semantic-list "((bit) == KBD_MODE_BIT_ALS || (bit) == KBD_MODE_BIT_TRIGGER_ALS)" 33458 . 33522)))
+          ("kbd_is_trigger_mode_bit" (spp-arg-list ("bit") 33554 . 33559) . ((semantic-list "((bit) >= KBD_MODE_BIT_TRIGGER_ALS && (bit) <= KBD_MODE_BIT_TRIGGER_100)" 33563 . 33635)))
+          ("KBD_LED_ON_TOKEN" . ((number "0x01E2" 1131 . 1137)))
+          ("KBD_LED_AUTO_25_TOKEN" . ((number "0x02EA" 1202 . 1208)))
+          ("pr_fmt" (spp-arg-list ("fmt") 513 . 518) . 
+              ((symbol "KBUILD_MODNAME" 519 . 533) (string "\": \"" 534 . 538) (symbol "fmt" 539 . 542)))
+          ("KBD_LED_AUTO_75_TOKEN" . ((number "0x02EC" 1276 . 1282)))
+          )
+))
+  :file "!home!marcus!git!linux!drivers!platform!x86!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

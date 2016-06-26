@@ -1,0 +1,257 @@
+;; Object i2c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "i2c/"
+  :tables
+  (list
+    (semanticdb-table "i2c-mux.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/kernel.h" include (:system-flag t) nil [830 855])
+            ("linux/module.h" include (:system-flag t) nil [856 881])
+            ("linux/slab.h" include (:system-flag t) nil [882 905])
+            ("linux/i2c.h" include (:system-flag t) nil [906 928])
+            ("linux/i2c-mux.h" include (:system-flag t) nil [929 955])
+            ("linux/of.h" include (:system-flag t) nil [956 977])
+            ("linux/acpi.h" include (:system-flag t) nil [978 1001])
+            ("i2c_mux_priv" type
+               (:members 
+                  ( ("adap" variable (:type ("i2c_adapter" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1061 1085])
+                    ("algo" variable (:type ("i2c_algorithm" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1087 1113])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1116 1143])
+                    ("mux_dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1145 1168])
+                    ("mux_priv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1170 1185])
+                    ("chan_id" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1187 1199])
+                    ("select" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("i2c_adapter" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1216 1237])
+                            ("mux_priv" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1238 1253])
+                            ("chan_id" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1254 1266]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1202 1267])
+                    ("deselect" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("i2c_adapter" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1285 1306])
+                            ("mux_priv" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [1307 1322])
+                            ("chan_id" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1323 1335]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1269 1336]))                  
+                :type "struct")
+                nil [1038 1339])
+            ("i2c_mux_master_xfer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("adap" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1372 1397])
+                    ("msgs" variable
+                       (:dereference 1
+                        :type ("i2c_msg" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1408 1430])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [1431 1439]))                  
+                :type "int")
+                nil [1341 1817])
+            ("i2c_mux_smbus_xfer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("adap" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1849 1874])
+                    ("addr" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1884 1893])
+                    ("flags" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1894 1915])
+                    ("read_write" variable (:type "char") (reparse-symbol arg-sub-list) [1925 1941])
+                    ("command" variable (:type ("u8" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1942 1953])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1963 1972])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("i2c_smbus_data" type (:type "union") nil nil))
+                        (reparse-symbol arg-sub-list) [1973 2000]))                  
+                :type "int")
+                nil [1819 2425])
+            ("i2c_mux_functionality" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("adap" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2500 2525]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [2467 2665])
+            ("i2c_mux_parent_classes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2750 2777]))                  
+                :type "unsigned int")
+                nil [2707 2920])
+            ("i2c_add_mux_adapter" function
+               (:pointer 1
+                :arguments 
+                  ( ("parent" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2962 2989])
+                    ("mux_dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2994 3017])
+                    ("mux_priv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3022 3037])
+                    ("force_nr" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3038 3051])
+                    ("chan_id" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3052 3064])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3069 3087])
+                    ("" variable (:type ("" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3082 3088])
+                    ("select" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("i2c_adapter" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3108 3129])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [3142 3149])
+                            ("" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3150 3154]))                          
+                        :type "int")
+                        nil nil)
+                    ("deselect" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("i2c_adapter" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3177 3198])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [3206 3213])
+                            ("" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3214 3218]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("i2c_adapter" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2922 5796])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("i2c_add_mux_adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5815 5835]))                  
+                :type "int")
+                nil [5797 5836])
+            ("i2c_del_mux_adapter" function
+               (:arguments 
+                  ( ("adap" variable
+                       (:pointer 1
+                        :type ("i2c_adapter" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5863 5888]))                  
+                :type "void")
+                nil [5838 6190])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("i2c_del_mux_adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6209 6229]))                  
+                :type "int")
+                nil [6191 6230])
+            ("MODULE_AUTHOR" function
+               (:prototype-flag t
+                :type "int")
+                nil [6232 6286])
+            ("MODULE_DESCRIPTION" function
+               (:prototype-flag t
+                :type "int")
+                nil [6287 6347])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [6348 6373]))          
+      :file "i2c-mux.c"
+      :pointmax 6374
+      :fsize 6373
+      :lastmodtime '(22115 59021 295201 141000)
+      :unmatched-syntax '((string 6363 . 6371) (string 6306 . 6345) (string 6246 . 6284))))
+  :file "!home!marcus!git!linux!drivers!i2c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,216 @@
+;; Object irq/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "irq/"
+  :tables
+  (list
+    (semanticdb-table "spurious.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("linux/jiffies.h" include (:system-flag t) nil [158 184])
+            ("linux/irq.h" include (:system-flag t) nil [185 207])
+            ("linux/module.h" include (:system-flag t) nil [208 233])
+            ("linux/kallsyms.h" include (:system-flag t) nil [234 261])
+            ("linux/interrupt.h" include (:system-flag t) nil [262 290])
+            ("linux/moduleparam.h" include (:system-flag t) nil [291 321])
+            ("linux/timer.h" include (:system-flag t) nil [322 346])
+            ("internals.h" include nil nil [348 370])
+            ("__read_mostly" variable (:type ("irqfixup" type (:type "class") nil nil)) nil [383 406])
+            ("POLL_SPURIOUS_IRQ_INTERVAL" variable (:constant-flag t) nil [416 442])
+            ("poll_spurious_irqs" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dummy" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [482 502]))                  
+                :type "void")
+                nil [451 503])
+            ("DEFINE_TIMER" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("poll_spurious_irq_timer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [524 548])
+                    ("" variable (:type ("poll_spurious_irqs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [549 568]))                  
+                :type "int")
+                nil [504 575])
+            ("irq_poll_cpu" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [576 600])
+            ("irq_poll_active" variable
+               (:typemodifiers ("static")
+                :type ("atomic_t" type (:type "class") nil nil))
+                nil [601 633])
+            ("irq_wait_for_poll" function
+               (:arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1049 1071]))                  
+                :type "bool")
+                nil [1026 1578])
+            ("try_one_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1657 1679])
+                    ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [1680 1691]))                  
+                :type "int")
+                nil [1634 3037])
+            ("misrouted_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [3064 3072]))                  
+                :type "int")
+                nil [3039 3466])
+            ("poll_spurious_irqs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dummy" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3499 3519]))                  
+                :type "void")
+                nil [3468 4048])
+            ("bad_action_ret" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4083 4106]))                  
+                :type "int")
+                nil [4050 4193])
+            ("__report_bad_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4533 4555])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4556 4579]))                  
+                :type "void")
+                nil [4504 5561])
+            ("report_bad_irq" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5590 5612])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5613 5636]))                  
+                :type "void")
+                nil [5563 5736])
+            ("try_misrouted_irq" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("irq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5774 5791])
+                    ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5792 5814])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5819 5842]))                  
+                :type "int")
+                nil [5738 6568])
+            ("SPURIOUS_DEFERRED" variable (:constant-flag t) nil [6578 6595])
+            ("note_interrupt" function
+               (:arguments 
+                  ( ("desc" variable
+                       (:pointer 1
+                        :type ("irq_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6628 6650])
+                    ("action_ret" variable (:type ("irqreturn_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6651 6674]))                  
+                :type "void")
+                nil [6608 11358])
+            ("__read_mostly" variable (:type ("noirqdebug" type (:type "class") nil nil)) nil [11365 11390])
+            ("noirqdebug_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11413 11423]))                  
+                :type "int")
+                nil [11392 11510])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("noirqdebug_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11534 11551]))                  
+                :type "int")
+                nil [11512 11552])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("noirqdebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11566 11577])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [11578 11583]))                  
+                :type "int")
+                nil [11553 11590])
+            ("MODULE_PARM_DESC" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("noirqdebug" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11608 11619]))                  
+                :type "int")
+                nil [11591 11662])
+            ("irqfixup_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11697 11707]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [11675 11865])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("irqfixup_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11887 11902]))                  
+                :type "int")
+                nil [11867 11903])
+            ("module_param" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("irqfixup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11917 11926])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [11927 11931]))                  
+                :type "int")
+                nil [11904 11938])
+            ("irqpoll_setup" function
+               (:arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11972 11982]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [11951 12177])
+            ("__setup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("irqpoll_setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12198 12212]))                  
+                :type "int")
+                nil [12179 12213]))          
+      :file "spurious.c"
+      :pointmax 12214
+      :fsize 12213
+      :lastmodtime '(22115 59025 468534 627000)
+      :unmatched-syntax '((string 12187 . 12196) (INT 11947 . 11950) (STATIC 11940 . 11946) (number 11932 . 11936) (string 11875 . 11885) (INT 11671 . 11674) (STATIC 11664 . 11670) (string 11620 . 11660) (number 11584 . 11588) (string 11520 . 11532) (BOOL 11360 . 11364) (number 572 . 573) (number 569 . 570) (INT 379 . 382) (STATIC 372 . 378))
+      :lexical-table 
+        '(("SPURIOUS_DEFERRED" . ((number "0x80000000" 6596 . 6606)))
+          ("POLL_SPURIOUS_IRQ_INTERVAL" . ((semantic-list "(HZ/10)" 443 . 450)))
+          )
+)
+    (semanticdb-table "internals.h"
+      :file "internals.h"
+      :fsize 6743
+      :lastmodtime '(22115 59025 468534 627000)))
+  :file "!home!marcus!git!linux!kernel!irq!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

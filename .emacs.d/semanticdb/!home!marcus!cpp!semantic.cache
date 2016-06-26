@@ -1,0 +1,25 @@
+;; Object cpp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cpp/"
+  :tables
+  (list
+    (semanticdb-table "template.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("quad" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type ("T" type (:type "class") nil nil)
+                :arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51 55]))                  )
+                nil [21 72])
+            ("main" function (:type "int") nil [76 236]))          
+      :file "template.cpp"
+      :pointmax 239
+      :fsize 238
+      :lastmodtime '(22068 53544 810616 213000)
+      :unmatched-syntax nil))
+  :file "!home!marcus!cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

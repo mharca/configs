@@ -1,0 +1,46 @@
+;; Object marcus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "marcus/"
+  :tables
+  (list
+    (semanticdb-table "setlayout.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [75 93])
+            ("unistd.h" include (:system-flag t) nil [94 113])
+            ("stdlib.h" include (:system-flag t) nil [114 133])
+            ("X11/Xlib.h" include (:system-flag t) nil [134 155])
+            ("X11/Xatom.h" include (:system-flag t) nil [156 178])
+            ("_NET_WM_ORIENTATION_HORZ" variable (:constant-flag t) nil [215 239])
+            ("_NET_WM_ORIENTATION_VERT" variable (:constant-flag t) nil [250 274])
+            ("_NET_WM_TOPLEFT" variable (:constant-flag t) nil [328 343])
+            ("_NET_WM_TOPRIGHT" variable (:constant-flag t) nil [358 374])
+            ("_NET_WM_BOTTOMRIGHT" variable (:constant-flag t) nil [388 407])
+            ("_NET_WM_BOTTOMLEFT" variable (:constant-flag t) nil [418 436])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [450 459])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [460 473]))                  
+                :type "int")
+                nil [441 1448]))          
+      :file "setlayout.c"
+      :pointmax 1449
+      :fsize 1448
+      :lastmodtime '(22074 52417 442298 301000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_NET_WM_ORIENTATION_VERT" . ((number "1" 275 . 276)))
+          ("_NET_WM_BOTTOMRIGHT" . ((number "2" 408 . 409)))
+          ("_NET_WM_ORIENTATION_HORZ" . ((number "0" 240 . 241)))
+          ("_NET_WM_TOPLEFT" . ((number "0" 348 . 349)))
+          ("_NET_WM_TOPRIGHT" . ((number "1" 378 . 379)))
+          ("_NET_WM_BOTTOMLEFT" . ((number "3" 438 . 439)))
+          )
+))
+  :file "!home!marcus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1204 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "main.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("X11/Xlib.h" include (:system-flag t) nil [628 649])
+            ("gtk/gtk.h" include (:system-flag t) nil [651 671])
+            ("gdk/gdkkeysyms.h" include (:system-flag t) nil [672 699])
+            ("gdk/gdkx.h" include (:system-flag t) nil [700 721])
+            ("string" include (:system-flag t) nil [723 740])
+            ("iostream" include (:system-flag t) nil [741 760])
+            ("sstream" include (:system-flag t) nil [761 779])
+            ("vector" include (:system-flag t) nil [780 797])
+            ("algorithm" include (:system-flag t) nil [798 818])
+            ("iterator" include (:system-flag t) nil [819 838])
+            ("popt.h" include (:system-flag t) nil [839 856])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [858 878])
+            ("unistd.h" include (:system-flag t) nil [922 941])
+            ("errno.h" include (:system-flag t) nil [942 960])
+            ("gtkcompletionline.h" include nil nil [962 992])
+            ("prefs.h" include nil nil [993 1011])
+            ("get_words" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1062 1088])
+                    ("words" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1089 1111]))                  
+                :type "int")
+                nil [1048 1112])
+            ("quote_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1133 1151]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [1113 1152])
+            ("gigi" type
+               (:members 
+                  ( ("w1" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1170 1184])
+                    ("w2" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1187 1201]))                  
+                :type "struct")
+                nil [1154 1204])
+            ("search_off_timeout" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1268 1283]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [1237 1284])
+            ("g_search_off_timeout_id" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("guint" type (:type "class") nil nil))
+                nil [1286 1327])
+            ("remove_search_off_timeout" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1329 1491])
+            ("add_search_off_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("timeout" variable (:type ("guint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1544])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1545 1560])
+                    ("func" variable
+                       (:default-value "0"
+                        :type ("GtkFunction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1561 1581]))                  
+                :type "void")
+                nil [1493 1737])
+            ("style_normal" function
+               (:pointer 1
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1791 1804]))                  
+                :type ("GtkStyle" type (:type "class") nil nil))
+                nil [1768 2023])
+            ("style_notfound" function
+               (:pointer 1
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2050 2063]))                  
+                :type ("GtkStyle" type (:type "class") nil nil))
+                nil [2025 2282])
+            ("style_notunique" function
+               (:pointer 1
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2310 2323]))                  
+                :type ("GtkStyle" type (:type "class") nil nil))
+                nil [2284 2542])
+            ("style_unique" function
+               (:pointer 1
+                :arguments 
+                  ( ("w" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2567 2580]))                  
+                :type ("GtkStyle" type (:type "class") nil nil))
+                nil [2544 2799])
+            ("run_with_system" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2829 2856])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2857 2872]))                  
+                :type "void")
+                nil [2801 3320])
+            ("run_the_command" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("command" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3723 3750])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3751 3766]))                  
+                :type "void")
+                nil [3695 5830])
+            ("on_ext_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5866 5888])
+                    ("ext" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5889 5905])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5906 5921]))                  
+                :type "void")
+                nil [5839 6347])
+            ("on_compline_runwithterm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6385 6407])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6408 6423]))                  
+                :type "void")
+                nil [6349 7140])
+            ("search_off_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7173 7188]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [7142 7342])
+            ("on_compline_unique" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7375 7397])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7398 7413]))                  
+                :type "void")
+                nil [7344 7554])
+            ("on_compline_notunique" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7590 7612])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7613 7628]))                  
+                :type "void")
+                nil [7556 7776])
+            ("on_compline_incomplete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7813 7835])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7836 7851]))                  
+                :type "void")
+                nil [7778 7997])
+            ("on_search_mode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8026 8048])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8049 8064]))                  
+                :type "void")
+                nil [7999 8399])
+            ("on_search_letter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8430 8452])
+                    ("label" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8453 8470]))                  
+                :type "void")
+                nil [8401 8538])
+            ("search_fail_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8572 8587]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [8540 8714])
+            ("on_search_not_found" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8748 8770])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8771 8786]))                  
+                :type "void")
+                nil [8716 8967])
+            ("url_check" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8991 9013])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9014 9029]))                  
+                :type "bool")
+                nil [8969 10479])
+            ("ext_check" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10503 10525])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10526 10541]))                  
+                :type "bool")
+                nil [10481 11441])
+            ("on_compline_activated" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11477 11499])
+                    ("g" variable
+                       (:pointer 1
+                        :type ("gigi" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11500 11515]))                  
+                :type "void")
+                nil [11443 12598])
+            ("screen_contains_pointer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("screen" variable
+                       (:pointer 1
+                        :type ("GdkScreen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12729 12747])
+                    ("x" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12773 12786])
+                    ("y" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12812 12825]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [12688 13400])
+            ("gmrun_gdk_display_locate_monitor_with_pointer" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("display" variable
+                       (:pointer 1
+                        :type ("GdkDisplay" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13547 13567])
+                    ("monitor_return" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13615 13642]))                  
+                :type ("GdkScreen" type (:type "class") nil nil))
+                nil [13482 14240])
+            ("gmrun_gtk_window_place_on_monitor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GtkWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14417 14435])
+                    ("screen" variable
+                       (:pointer 1
+                        :type ("GdkScreen" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14471 14489])
+                    ("monitor" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14525 14544])
+                    ("request_x" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14580 14605])
+                    ("request_y" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14642 14667]))                  
+                :type "void")
+                nil [14313 15959])
+            ("gmrun_gtk_window_place_at" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("GtkWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15999 16017])
+                    ("request_x" variable (:type "int") (reparse-symbol arg-sub-list) [16042 16056])
+                    ("request_y" variable (:type "int") (reparse-symbol arg-sub-list) [16081 16095])
+                    ("centered_width" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16120 16142])
+                    ("centered_height" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16168 16191])
+                    ("on_active" variable
+                       (:default-value "0"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16217 16234]))                  
+                :type "void")
+                nil [15961 16885])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [16896 16905])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16906 16918]))                  
+                :type "int")
+                nil [16887 22045]))          
+      :file "main.cc"
+      :pointmax 22125
+      :fsize 22124
+      :lastmodtime '(22179 3250 833647 79000)
+      :unmatched-syntax nil)
+    (semanticdb-table "gtkcompletionline.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("__GTKCOMPLETIONLINE_H__" variable (:constant-flag t) nil [681 704])
+            ("gtk/gtkentry.h" include (:system-flag t) nil [706 731])
+            ("string" include (:system-flag t) nil [733 750])
+            ("history.h" include nil nil [752 772])
+            ("gtk_completion_line_last_history_item" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2431 2450]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2388 2451])
+            ("gtk_completion_line_new" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("GtkWidget" type (:type "class") nil nil)
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2347 2384])
+            ("gtk_completion_line_get_type" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("guint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2338 2343]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2303 2344])
+            ("_GtkCompletionLineClass" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("parent_class" variable (:type ("GtkEntryClass" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1793 1820])
+                    ("unique" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1880 1902]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1864 1903])
+                    ("notunique" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1927 1949]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1908 1950])
+                    ("incomplete" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1975 1997]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1955 1998])
+                    ("runwithterm" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2024 2046]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2003 2047])
+                    ("search_mode" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2073 2095]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2052 2096])
+                    ("search_letter" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2124 2146]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2101 2147])
+                    ("search_not_found" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2178 2200]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2152 2201])
+                    ("ext_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2227 2249]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2206 2250])
+                    ("cancel" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("cl" variable
+                               (:pointer 1
+                                :type ("GtkCompletionLine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2271 2293]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2255 2294]))                  )
+                (reparse-symbol extern-c-contents) [1754 2299])
+            ("_GtkCompletionLine" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("parent" variable (:type ("GtkEntry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1405 1421])
+                    ("win_compl" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1426 1447])
+                    ("list_compl" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1452 1474])
+                    ("list_compl_items_where" variable (:type "int") (reparse-symbol classsubparts) [1479 1506])
+                    ("list_compl_nr_rows" variable (:type "int") (reparse-symbol classsubparts) [1511 1534])
+                    ("pos_in_text" variable (:type "int") (reparse-symbol classsubparts) [1539 1555])
+                    ("cmpl" variable
+                       (:pointer 1
+                        :type ("GList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1561 1573])
+                    ("where" variable
+                       (:pointer 1
+                        :type ("GList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1578 1591])
+                    ("hist" variable
+                       (:pointer 1
+                        :type ("HistoryFile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1597 1615])
+                    ("hist_search_mode" variable (:type ("GCL_SEARCH_MODE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1620 1653])
+                    ("hist_word" variable
+                       (:pointer 1
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1658 1681])
+                    ("first_key" variable (:type "int") (reparse-symbol classsubparts) [1687 1701])
+                    ("tabtimeout" variable (:type "int") (reparse-symbol classsubparts) [1706 1721])
+                    ("show_dot_files" variable (:type "int") (reparse-symbol classsubparts) [1726 1745]))                  )
+                (reparse-symbol extern-c-contents) [1371 1750])
+            ("GCL_SEARCH_MODE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "enum"
+                :members 
+                  ( ("GCL_SEARCH_OFF" variable
+                       (:constant-flag t
+                        :default-value (1289 1290)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1272 1290])
+                    ("GCL_SEARCH_REW" variable
+                       (:constant-flag t
+                        :default-value (1313 1314)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1296 1314])
+                    ("GCL_SEARCH_FWD" variable
+                       (:constant-flag t
+                        :default-value (1337 1338)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1320 1338])
+                    ("GCL_SEARCH_BEG" variable
+                       (:constant-flag t
+                        :default-value (1361 1362)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1344 1362]))                  )
+                (reparse-symbol extern-c-contents) [1243 1367])
+            ("GtkCompletionLineClass" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GtkCompletionLineClass" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1177 1239])
+            ("GtkCompletionLine" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("_GtkCompletionLine" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [1122 1174])
+            ("IS_GTK_COMPLETION_LINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1035 1057])
+            ("GTK_COMPLETION_LINE_CLASS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [906 931])
+            ("GTK_COMPLETION_LINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [798 817]))          
+      :file "gtkcompletionline.h"
+      :pointmax 2571
+      :fsize 2570
+      :lastmodtime '(22179 3250 833647 79000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GTK_COMPLETION_LINE" (spp-arg-list ("obj") 817 . 822) . ((symbol "GTK_CHECK_CAST" 827 . 841) (semantic-list "(obj, gtk_completion_line_get_type(), GtkCompletionLine)" 841 . 897)))
+          ("IS_GTK_COMPLETION_LINE" (spp-arg-list ("obj") 1057 . 1062) . ((symbol "GTK_CHECK_TYPE" 1067 . 1081) (semantic-list "(obj, gtk_completion_line_get_type())" 1081 . 1118)))
+          ("GTK_COMPLETION_LINE_CLASS" (spp-arg-list ("klass") 931 . 938) . ((symbol "GTK_CHECK_CLASS_CAST" 943 . 963) (semantic-list "(klass, gtk_completion_line_get_type(), GtkCompletionLineClass)" 963 . 1026)))
+          ("__GTKCOMPLETIONLINE_H__")
+          )
+)
+    (semanticdb-table "prefs.h"
+      :file "prefs.h"
+      :fsize 1344
+      :lastmodtime '(22179 3250 833647 79000))
+    (semanticdb-table "history.h"
+      :file "history.h"
+      :fsize 1711
+      :lastmodtime '(22179 3250 833647 79000))
+    (semanticdb-table "gtkcompletionline.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("gdk/gdkkeysyms.h" include (:system-flag t) nil [642 669])
+            ("gtk/gtksignal.h" include (:system-flag t) nil [670 696])
+            ("gtk/gtkclist.h" include (:system-flag t) nil [697 722])
+            ("gtk/gtkwindow.h" include (:system-flag t) nil [723 749])
+            ("gtk/gtkscrolledwindow.h" include (:system-flag t) nil [750 784])
+            ("gtk/gtkmain.h" include (:system-flag t) nil [785 809])
+            ("stddef.h" include (:system-flag t) nil [811 830])
+            ("stdio.h" include (:system-flag t) nil [831 849])
+            ("stdlib.h" include (:system-flag t) nil [850 869])
+            ("string.h" include (:system-flag t) nil [870 889])
+            ("dirent.h" include (:system-flag t) nil [890 909])
+            ("sys/types.h" include (:system-flag t) nil [910 932])
+            ("sys/stat.h" include (:system-flag t) nil [933 954])
+            ("unistd.h" include (:system-flag t) nil [955 974])
+            ("iostream" include (:system-flag t) nil [976 995])
+            ("set" include (:system-flag t) nil [996 1010])
+            ("sstream" include (:system-flag t) nil [1011 1029])
+            ("string" include (:system-flag t) nil [1030 1047])
+            ("vector" include (:system-flag t) nil [1048 1065])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1066 1086])
+            ("gtkcompletionline.h" include nil nil [1088 1118])
+            ("on_row_selected_handler" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [1120 1159])
+            ("on_key_press_handler" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [1160 1196])
+            ("" type
+               (:members 
+                  ( ("UNIQUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1236 1243])
+                    ("NOTUNIQUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1246 1256])
+                    ("INCOMPLETE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1259 1270])
+                    ("RUNWITHTERM" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1273 1285])
+                    ("SEARCH_MODE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1288 1300])
+                    ("SEARCH_LETTER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1303 1317])
+                    ("SEARCH_NOT_FOUND" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1320 1337])
+                    ("EXT_HANDLER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1340 1352])
+                    ("CANCEL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1355 1362])
+                    ("LAST_SIGNAL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1365 1378]))                  
+                :type "enum")
+                nil [1227 1379])
+            ("GEN_COMPLETION_OK" variable (:constant-flag t) nil [1389 1406])
+            ("GEN_CANT_COMPLETE" variable (:constant-flag t) nil [1418 1435])
+            ("GEN_NOT_UNIQUE" variable (:constant-flag t) nil [1447 1461])
+            ("gtk_completion_line_signals" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("guint" type (:type "class") nil nil))
+                nil [1469 1523])
+            ("StrSet" type
+               (:typedef ("set" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1525 1552])
+            ("StrList" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("string" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [1553 1584])
+            ("path" variable
+               (:typemodifiers ("static")
+                :type ("StrSet" type (:type "class") nil nil))
+                nil [1586 1605])
+            ("execs" variable
+               (:typemodifiers ("static")
+                :type ("StrSet" type (:type "class") nil nil))
+                nil [1606 1626])
+            ("dirlist" variable
+               (:typemodifiers ("static")
+                :type ("StrSet" type (:type "class") nil nil))
+                nil [1627 1649])
+            ("prefix" variable
+               (:typemodifiers ("static")
+                :type ("string" type (:type "class") nil nil))
+                nil [1650 1671])
+            ("g_show_dot_files" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1672 1700])
+            ("gtk_completion_line_class_init" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLineClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1761 1791]))                  
+                :type "void")
+                nil [1718 1792])
+            ("gtk_completion_line_init" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1830 1856]))                  
+                :type "void")
+                nil [1793 1857])
+            ("on_key_press" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1888 1910])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1911 1930])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1931 1945]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [1859 1946])
+            ("gtk_completion_line_get_type" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1998 2003]))                  
+                :type ("guint" type (:type "class") nil nil))
+                nil [1963 2471])
+            ("gtk_completion_line_class_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLineClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2533 2563]))                  
+                :type "void")
+                nil [2490 6026])
+            ("gtk_completion_line_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6076 6102]))                  
+                :type "void")
+                nil [6039 6735])
+            ("gtk_completion_line_last_history_item" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6780 6806]))                  
+                :type "void")
+                nil [6737 7127])
+            ("quote_string" function
+               (:arguments 
+                  ( ("str" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7149 7167]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [7129 7355])
+            ("get_token" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7379 7391])
+                    ("s" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7392 7402]))                  
+                :type "void")
+                nil [7357 7818])
+            ("get_words" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7834 7860])
+                    ("words" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7861 7883]))                  
+                :type "int")
+                nil [7820 8388])
+            ("set_words" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8404 8430])
+                    ("words" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8431 8459])
+                    ("pos" variable
+                       (:default-value "-1"
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8460 8472]))                  
+                :type "int")
+                nil [8390 9320])
+            ("generate_path" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [9322 9693])
+            ("select_executables_only" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dent" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("dirent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9730 9756]))                  
+                :type "int")
+                nil [9695 10229])
+            ("my_alphasort" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("dirent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10248 10272])
+                    ("b" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type ("dirent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10273 10297]))                  
+                :type "int")
+                nil [10231 10657])
+            ("generate_execs" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [10659 11027])
+            ("generate_completion_from_execs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11071 11097]))                  
+                :type "int")
+                nil [11029 11435])
+            ("get_common_part" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11467 11482])
+                    ("p2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11483 11498]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [11437 11625])
+            ("complete_common" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11654 11680]))                  
+                :type "int")
+                nil [11627 12276])
+            ("generate_dirlist" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("what" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12306 12323]))                  
+                :type "int")
+                nil [12278 13242])
+            ("generate_completion_from_dirlist" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13288 13314]))                  
+                :type "int")
+                nil [13244 13656])
+            ("parse_tilda" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13681 13707]))                  
+                :type "int")
+                nil [13658 14343])
+            ("complete_from_list" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14376 14402]))                  
+                :type "void")
+                nil [14345 15433])
+            ("on_row_selected" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ls" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15463 15477])
+                    ("row" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15478 15487])
+                    ("col" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15488 15497])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("GdkEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15498 15511])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15512 15526]))                  
+                :type "void")
+                nil [15435 15866])
+            ("complete_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16699 16725]))                  
+                :type "int")
+                nil [16674 20995])
+            ("gtk_completion_line_new" function
+               (:pointer 1
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [20997 21105])
+            ("up_history" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21130 21152]))                  
+                :type "void")
+                nil [21107 21320])
+            ("down_history" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21347 21369]))                  
+                :type "void")
+                nil [21322 21537])
+            ("search_back_history" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21570 21592])
+                    ("avance" variable (:type "bool") (reparse-symbol arg-sub-list) [21593 21605])
+                    ("begin" variable (:type "bool") (reparse-symbol arg-sub-list) [21606 21617]))                  
+                :type "int")
+                nil [21539 22845])
+            ("search_forward_history" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22881 22903])
+                    ("avance" variable (:type "bool") (reparse-symbol arg-sub-list) [22904 22916])
+                    ("begin" variable (:type "bool") (reparse-symbol arg-sub-list) [22917 22928]))                  
+                :type "int")
+                nil [22847 24154])
+            ("search_history" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24182 24204])
+                    ("avance" variable (:type "bool") (reparse-symbol arg-sub-list) [24205 24217])
+                    ("begin" variable (:type "bool") (reparse-symbol arg-sub-list) [24218 24229]))                  
+                :type "int")
+                nil [24156 24477])
+            ("search_off" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24839 24861]))                  
+                :type "void")
+                nil [24816 25103])
+            ("STOP_PRESS" variable (:constant-flag t) nil [25113 25123])
+            ("MODE_BEG" variable (:constant-flag t) nil [25204 25212])
+            ("MODE_REW" variable (:constant-flag t) nil [25266 25274])
+            ("MODE_FWD" variable (:constant-flag t) nil [25328 25336])
+            ("MODE_SRC" variable (:constant-flag t) nil [25390 25398])
+            ("tab_pressed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25469 25491]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [25445 25568])
+            ("clear_selection" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25598 25620]))                  
+                :type "void")
+                nil [25570 25739])
+            ("on_key_press" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cl" variable
+                       (:pointer 1
+                        :type ("GtkCompletionLine" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25770 25792])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25793 25812])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25813 25827]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [25741 31187]))          
+      :file "gtkcompletionline.cc"
+      :pointmax 31350
+      :fsize 31349
+      :lastmodtime '(22179 4224 190349 303000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GEN_CANT_COMPLETE" . ((number "2" 1437 . 1438)))
+          ("GEN_COMPLETION_OK" . ((number "1" 1408 . 1409)))
+          ("GEN_NOT_UNIQUE" . ((number "3" 1466 . 1467)))
+          )
+))
+  :file "!tmp!gmrun!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

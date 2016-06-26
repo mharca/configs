@@ -1,0 +1,60 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/marcus/" . ".config/")
+ ("/" . "tmp/")
+ ("/home/marcus/.config/" . "openbox/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/marcus/"
+ "/tmp/"
+ "/tmp/a/"
+ "/home/marcus/git/linux/Documentation/driver-model/"
+ "/etc/systemd/"
+ "/home/marcus/.config/openbox/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "Jan.java"
+ "teori.txt"
+ "FIFAWC.EXE"
+ ".startx3.sh"
+ "design-patterns.txt"
+ "logind.conf.pacnew"
+ "logind.conf"
+ "1.py"
+ ".emacs3"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/marcus/" (22382 35979 384795 331000) "usbnet.sh" ".fehbg" ".icons/" ".ICEauthority" ".eclipse/" ".xfce4-session.verbose-log.last" "bloqueioCartaoBBProtocolo.txt" "nosd.sh~" "vpn.sh" ".steampid" "santander1.pdf" ".xinitrc~" "clipes/" "rockyou.txt" ".kodi/" ".grive" ".android/" ".wicd/" ".designer/" "mp3/" "chromium/" "Pictures/" "laptopsamba.sh" ".scripts/" ".gimp-2.8/" ".mplayer/" "eu/" "planilhaFinanceira/" ".startx4.sh" ".dbgl/" "XSS_Attacking_Tutorial-OVLz6RgOjIY.mp4" "firefox/" "ihateflash-16.jpg" ".emacs.d/" "seguraOgrave1ano-140.jpg" "cpp/" ".emacs~" "backup.log" ".urxvt/" ".mythtv/" ".gmrunrc" "git/" "chaves2.db" ".gtkrc-2.0~" ".aMule/" ".local/" ".thunderbird/" "kodibackup/" ".dia/" "tor-email.txt" "icq.wav" ".pyrit/" ".tor-browser-en/" "hitachi.log" "xorg.conf.new" "Downloads/" ".bashrc" ".startx3.sh" "teori.txt" "Sexlog videos/" "gato/" ".config/" "conky.conf" ".archey3.cfg" "photorec.ses" ".esd_auth" ".mozilla/" ".zenmap/" "distros/" "fifa98-psx.iso" ".dbus/" "resetwifi.sh" ".Xdefaults" ".adobe/" "internet livre.png" ".themes/" "prive-santaClara.png" "python/" "strap.sh" ".tint2-crash.log" "laptopsamba.sh~" ".startx2.sh" "google.sh" "dos/" ".bash_history" "Music/" "Videos/" "documents-export-2015-10-13.zip" "teamviewer/" "pri.iso.gz" ".putty/" "setlayout.c" "1457309603342.jpg" "gd/" ".pki/" "chagasSDA1.iso.gz" ".googleearth/" ".pcsxr/" "nosd.sh" ".lios_preferences.cfg" "_zamith_eletronicoverao6_-10.jpg" "petwifi.sh" ".vimrc" ".bitcoin/" "VirtualBox VMs/" ".Xdefaults~" ".emacs.1" "s/" "workspace/" "Desktop/" ".steam/" ".java/" ".startx2.sh~" "emacs.txt" ".subversion/" "gptbackup.bin" "t/" "mandarPriscilla.webm" ".sqlmap/" ".lesshst" ".gdfuse/" "w/" ".steampath" ".gksu.lock" ".Xauthority" "syslinux.cfg.bak" "Templates/" "The_Code_-_Story_of_Linux_documentary_MULTiSUB-XMm0HsmOTFI.en.srt" ".emacs.before_ecb_2.40" ".swt/" ".startx3.sh~" ".scapy_history" ".startx4.sh~" "ihatemondays30_184.jpg" "12321494_1232568253438525_4865946737066780857_n.jpg" ".cgminer/" ".profile" "PlayOnLinux's virtual drives/" ".gmrun_history" "fun/" ".thumbnails/" "Documents/" "dwhelper/" "escala2016.gif" "out/" ".mame/" ".lios_recent" "LER/" "1456004210298.webm" ".xfce4-session.verbose-log" ".xinitrc2" "g.sh" "internetimportante2.png" ".gnupg/" ".python_history" ".netbeans/" ".cache/" ".wine/" "dell-chan-bateria.txt" ".snes9x/" ".xinitrc" ".lyrics/" "filhos.cap-01.kismet.netxml" "anonymous-HD.jpg" "vpn/" ".receitanet/" "neteller.txt" "proxy.txt" "c/" ".viminfo" ".macromedia/" ".conkyrc" "android/" ".sqlite_history-" "10505431_919802888045916_5249177384882979214_n.jpg" "00cartao.jpg" ".gnome/" "_zamith_eletronicoverao6_-9.jpg" ".msf4/" ".softwifi.sh~" ".emacs.2" "mozilla.pdf" ".gstreamer-0.10/" ".dosbox/" "chaves.db" ".conkyrc~" ".jd/" "pdf/" ".emacs" ".gtkrc-2.0" ".bash_logout" "backupFotosCelular/" ".pulse-cookie" ".irssi/" ".softwifi.sh" "ChangeLog-4.4.3" ".bashrc~" ".tooling/" ".nvidia-settings-rc" ".emacs3" "1447028539767.jpg" ".codeblocks/" ".ecb-tip-of-day.el" ".zsnes/" "chagas.iso" ".gitconfig" "1448377944521.jpg" "planilhaCalendar.ods" "mpv-shot0003.jpg" "sapataVM.jpg" "adilson-01.kismet.netxml" ".bash_profile" "The_Code_-_Story_of_Linux_documentary_MULTiSUB-XMm0HsmOTFI.mkv" "x/" ".ncmpcpp/" ".ssh/" ".PlayOnLinux/" "neteller-codigos.png" ".cinnamon/" ".gtkrc-2.0-back" "Public/" "resetwifi.sh~" ".secondlife/" "../" "./")
+
+ ("/home/marcus/c/" (22325 30387 154066 899000) "2.cpp" "./" "sq" "../" "2" "2.cpp~" "2.o" "sq.c" "#sq.c#" "#3.py#")
+
+ ("/home/marcus/.config/openbox/" (22316 9755 562397 264000) "./" "environment" "autostart~" "rc.xml~" "../" "rc.xml" "autostart" "menu.xml")
+
+ ("/home/marcus/git/linux/Documentation/driver-model/" (22296 35938 0 0) "devres.txt" "bus.txt" "class.txt" "./" "../" "binding.txt" "design-patterns.txt" "platform.txt" "porting.txt" "device.txt" "driver.txt" "overview.txt")
+
+ ("/tmp/" (22357 10577 751981 523000) ".X11-unix/" ".ICE-unix/" ".XIM-unix/" ".font-unix/" ".Test-unix/" "serverauth.kPpODOV61P" ".X0-lock" ".xfsm-ICE-PA6IIY" "ssh-cNhAIT7qUxVy/" ".esd-1000/" "tracker-extract-files.1000/" "pacaurtmp-marcus/" "github.png" "Main.java" "hsperfdata_marcus/" "Main.class" "babel-136416kS/" ".#Main.java" "../" "./")
+
+ ("/etc/systemd/" (22220 56431 754960 965000) "logind.conf" "system/" "user/" "./" "journald.conf" "resolved.conf" "journal-remote.conf" "../" "system.conf" "network/" "coredump.conf" "timesyncd.conf" "journal-upload.conf" "bootchart.conf" "logind.conf.pacnew" "user.conf")
+
+ ("/tmp/a/" (22212 10233 998080 420000) "AUTORUN.EXE" "AUTORUN.INF" "AUTORUN.TRE" "EACSND.DLL" "EACSNDD.DLL" "FIFAWC.EXE" "FIFAWC98.ICO" "INSTALL.SKU" "US.SKU" "AUDIO/" "AUTORUN/" "COMM/" "COMMON/" "DIRECTX5/" "FE/" "FE2/" "FEPACK/" "INGAME/" "INSTALL/" "SETUP/" "THRASH/" "VIDEO/" "CRACK.EXE" "USER/" "../" "./")
+
+ ("/home/" (22181 6163 467660 814000) "./" "teste/" "marcus/" "../" "visita/")
+
+ ("/home/marcus/git/" (22211 27562 151176 350000) "Viewnior/" "./" "garagem.2/" "gmrun/" "../" "linux/" "chaves-20160215/" "configs/" "garagem.7z" "garagem/")
+
+ ("/home/marcus/git/linux/" (22211 63456 88086 911000) "security/" "firmware/" "fs/" ".missing-syscalls.d" "net/" ".tmp_vmlinux1" "tools/" "./" "lib/" "Kbuild" "vmlinux.o" "System.map" "mm/" "vmlinux" "modules.order" ".mailmap" ".config" "../" "crypto/" "samples/" "kernel/" ".gitignore" "MAINTAINERS" ".tmp_versions/" ".tmp_System.map" ".get_maintainer.ignore" "mkinitcpio.sh" "Makefile" ".version" "Kconfig" ".config2" "usr/" "virt/" "include/" "REPORTING-BUGS" ".config~" ".tmp_kallsyms2.o" "CREDITS" "Module.symvers" "COPYING" "Documentation/" "modules.builtin" ".vmlinux.cmd" ".git/" ".tmp_kallsyms1.o" "certs/" "block/" "sound/" ".tmp_vmlinux2" "init/" ".config.old" "arch/" "drivers/" "scripts/" "README" "ipc/")
+
+ ("/home/marcus/.config/" (22186 49610 463815 720000) "xfburn/" "filezilla/" "epdfview/" "libfm/" "nemo/" "smtube/" "xfce4-session/" "mpv/" "qupzilla/" "viewnior/" "chromium/" "mc/" "./" "evolution/" "ImageMagick/" "xarchiver/" "gnome-control-center/" "enchant/" "mimeapps.list" "git/" "ibus/" "VirtualBox/" "Thunar/" "../" "pcmanfm-qt/" "orage/" "fontconfig/" "pavucontrol.ini" "icedtea-web/" "volumeicon/" "vlc/" "nautilus/" "tint2/" "openbox/" "eog/" "Thunar.bak/" "goa-1.0/" "pcmanfm/" "autostart/" "Mousepad/" "gconf/" "gtk-2.0/" "cinnamon-session/" "menus/" "calibre/" "smplayer/" "compiz-1/" "xfce4/" "pulse/" "htop/" "leafpad/" "ristretto/" "wireshark/" "i3/" "QtProject.conf" "PornTime/" "lxqt/" "transmission/" "epiphany/" "dconf/" "elegance-colors/" "Empathy/" "trizen/" "uGet/" "libreoffice/" "totem/" "gnome-session/" "gtk-3.0/" "Trolltech.conf")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,1468 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "vnr-window.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("libintl.h" include (:system-flag t) nil [754 774])
+            ("glib/gi18n.h" include (:system-flag t) nil [775 798])
+            ("_" variable (:constant-flag t) nil [807 808])
+            ("config.h" include nil nil [835 854])
+            ("glib/gstdio.h" include (:system-flag t) nil [855 879])
+            ("gtk/gtk.h" include (:system-flag t) nil [880 900])
+            ("gdk/gdkkeysyms.h" include (:system-flag t) nil [901 928])
+            ("errno.h" include (:system-flag t) nil [929 947])
+            ("sys/wait.h" include (:system-flag t) nil [948 969])
+            ("vnr-window.h" include nil nil [970 993])
+            ("uni-scroll-win.h" include nil nil [994 1021])
+            ("uni-anim-view.h" include nil nil [1022 1048])
+            ("vnr-tools.h" include nil nil [1049 1071])
+            ("vnr-file.h" include nil nil [1072 1093])
+            ("vnr-message-area.h" include nil nil [1094 1123])
+            ("vnr-properties-dialog.h" include nil nil [1124 1158])
+            ("vnr-crop.h" include nil nil [1159 1180])
+            ("uni-exiv2.hpp" include nil nil [1181 1205])
+            ("FULLSCREEN_TIMEOUT" variable (:constant-flag t) nil [1268 1286])
+            ("G_DEFINE_TYPE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("VnrWindow" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1318])
+                    ("" variable (:type ("vnr_window" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1319 1330])
+                    ("" variable (:type ("GTK_TYPE_WINDOW" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1331 1347]))                  
+                :type "int")
+                nil [1293 1348])
+            ("vnr_window_unfullscreen" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1387 1405]))                  
+                :type "void")
+                nil [1350 1406])
+            ("stop_slideshow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1434 1452]))                  
+                :type "void")
+                nil [1407 1453])
+            ("start_slideshow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1482 1500]))                  
+                :type "void")
+                nil [1454 1501])
+            ("restart_slideshow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1532 1550]))                  
+                :type "void")
+                nil [1502 1551])
+            ("allow_slideshow" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1580 1598]))                  
+                :type "void")
+                nil [1552 1599])
+            ("leave_fs_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("button" variable
+                       (:pointer 1
+                        :type ("GtkButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1626 1644])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1645 1663]))                  
+                :type "void")
+                nil [1601 1664])
+            ("toggle_show_next_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("togglebutton" variable
+                       (:pointer 1
+                        :type ("GtkToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1698 1728])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1729 1747]))                  
+                :type "void")
+                nil [1665 1748])
+            ("spin_value_change_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("spinbutton" variable
+                       (:pointer 1
+                        :type ("GtkSpinButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1783 1809])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1810 1828]))                  
+                :type "void")
+                nil [1749 1829])
+            ("save_image_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1857 1875])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1876 1894]))                  
+                :type "void")
+                nil [1830 1895])
+            ("zoom_changed_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :type ("UniImageView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1925 1944])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1945 1963]))                  
+                :type "void")
+                nil [1896 1964])
+            ("fullscreen_timeout_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2004 2022]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [1965 2023])
+            ("leave_image_area_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2060 2079])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("GdkEventCrossing" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2080 2102])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2103 2121]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [2024 2122])
+            ("fullscreen_motion_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2160 2179])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("GdkEventMotion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2180 2200])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2201 2219]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [2123 2220])
+            ("open_with_launch_application_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2266 2284])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2285 2303]))                  
+                :type "void")
+                nil [2221 2304])
+            ("ui_definition" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"<ui>\"
+  \"<menubar name=\\\"MainMenu\\\">\"
+    \"<menu action=\\\"File\\\">\"
+      \"<menuitem action=\\\"FileOpen\\\"/>\"
+      \"<menuitem action=\\\"FileOpenDir\\\"/>\"
+      \"<menu action=\\\"FileOpenWith\\\">\"
+         \"<placeholder name=\\\"AppEntries\\\"/>\"
+      \"</menu>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"FileSave\\\"/>\"
+      \"<menuitem action=\\\"FileReload\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"FileProperties\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"FileClose\\\"/>\"
+    \"</menu>\"
+    \"<menu action=\\\"Edit\\\">\"
+      \"<menuitem action=\\\"FileDelete\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"EditPreferences\\\"/>\"
+    \"</menu>\"
+    \"<menu action=\\\"View\\\">\"
+      \"<menuitem action=\\\"ViewMenuBar\\\"/>\"
+      \"<menuitem action=\\\"ViewToolbar\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"ViewZoomIn\\\"/>\"
+      \"<menuitem action=\\\"ViewZoomOut\\\"/>\"
+      \"<menuitem action=\\\"ViewZoomNormal\\\"/>\"
+      \"<menuitem action=\\\"ViewZoomFit\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem name=\\\"Fullscreen\\\" action=\\\"ViewFullscreen\\\"/>\"
+      \"<menuitem name=\\\"Slideshow\\\" action=\\\"ViewSlideshow\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem name=\\\"ResizeWindow\\\" action=\\\"ViewResizeWindow\\\"/>\"
+    \"</menu>\"
+    \"<menu action=\\\"Image\\\">\"
+      \"<menuitem action=\\\"ImageFlipVertical\\\"/>\"
+      \"<menuitem action=\\\"ImageFlipHorizontal\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"ImageRotateCW\\\"/>\"
+      \"<menuitem action=\\\"ImageRotateCCW\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"ImageCrop\\\"/>\"
+      \"<placeholder name=\\\"WallpaperEntry\\\"/>\"
+    \"</menu>\"
+    \"<menu action=\\\"Go\\\">\"
+      \"<menuitem name=\\\"GoPrevious\\\" action=\\\"GoPrevious\\\"/>\"
+      \"<menuitem name=\\\"GoNext\\\" action=\\\"GoNext\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem name=\\\"GoFirst\\\" action=\\\"GoFirst\\\"/>\"
+      \"<menuitem name=\\\"GoLast\\\" action=\\\"GoLast\\\"/>\"
+    \"</menu>\"
+    \"<menu action=\\\"Help\\\">\"
+      \"<menuitem action=\\\"HelpAbout\\\"/>\"
+    \"</menu>\"
+  \"</menubar>\"
+  \"<popup name=\\\"ButtonMenu\\\">\"
+    \"<menuitem action=\\\"FileOpen\\\"/>\"
+    \"<menuitem action=\\\"FileOpenDir\\\"/>\"
+    \"<menu action=\\\"FileOpenWith\\\">\"
+       \"<placeholder name=\\\"AppEntries\\\"/>\"
+    \"</menu>\"
+    \"<separator/>\"
+    \"<menuitem action=\\\"FileSave\\\"/>\"
+    \"<menuitem action=\\\"FileReload\\\"/>\"
+    \"<menuitem action=\\\"FileProperties\\\"/>\"
+    \"<separator/>\"
+    \"<menu action=\\\"Edit\\\">\"
+      \"<menuitem action=\\\"FileDelete\\\"/>\"
+      \"<separator/>\"
+    \"</menu>\"
+    \"<menu action=\\\"View\\\">\"
+      \"<menuitem action=\\\"ViewZoomIn\\\"/>\"
+      \"<menuitem action=\\\"ViewZoomOut\\\"/>\"
+      \"<menuitem action=\\\"ViewZoomNormal\\\"/>\"
+      \"<menuitem action=\\\"ViewZoomFit\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"ViewMenuBar\\\"/>\"
+      \"<menuitem action=\\\"ViewToolbar\\\"/>\"
+      \"<menuitem name=\\\"Fullscreen\\\" action=\\\"ViewFullscreen\\\"/>\"
+      \"<menuitem name=\\\"Slideshow\\\" action=\\\"ViewSlideshow\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem name=\\\"ResizeWindow\\\" action=\\\"ViewResizeWindow\\\"/>\"
+    \"</menu>\"
+    \"<menu action=\\\"Image\\\">\"
+      \"<menuitem action=\\\"ImageFlipVertical\\\"/>\"
+      \"<menuitem action=\\\"ImageFlipHorizontal\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"ImageRotateCW\\\"/>\"
+      \"<menuitem action=\\\"ImageRotateCCW\\\"/>\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"ImageCrop\\\"/>\"
+      \"<placeholder name=\\\"WallpaperEntry\\\"/>\"
+    \"</menu>\"
+    \"<separator/>\"
+    \"<menuitem action=\\\"EditPreferences\\\"/>\"
+    \"<separator/>\"
+    \"<menuitem action=\\\"HelpAbout\\\"/>\"
+    \"<menuitem action=\\\"FileClose\\\"/>\"
+  \"</popup>\"
+  \"<toolbar name=\\\"Toolbar\\\">\"
+    \"<toolitem action=\\\"GoPrevious\\\"/>\"
+    \"<toolitem action=\\\"GoNext\\\"/>\"
+    \"<separator/>\"
+    \"<toolitem action=\\\"ViewZoomIn\\\"/>\"
+    \"<toolitem action=\\\"ViewZoomOut\\\"/>\"
+    \"<toolitem action=\\\"ViewZoomNormal\\\"/>\"
+    \"<toolitem action=\\\"ViewZoomFit\\\"/>\"
+    \"<separator/>\"
+    \"<toolitem action=\\\"ImageRotateCCW\\\"/>\"
+    \"<toolitem action=\\\"ImageRotateCW\\\"/>\"
+    \"<separator expand=\\\"true\\\"/>\"
+    \"<toolitem action=\\\"Properties\\\"/>\"
+  \"</toolbar>\"
+  \"<popup name=\\\"PopupMenu\\\">\"
+    \"<menuitem name=\\\"GoPrevious\\\" action=\\\"GoPrevious\\\"/>\"
+    \"<menuitem name=\\\"GoNext\\\" action=\\\"GoNext\\\"/>\"
+    \"<separator/>\"
+    \"<menu action=\\\"FileOpenWith\\\">\"
+       \"<placeholder name=\\\"AppEntries\\\"/>\"
+    \"</menu>\"
+    \"<separator/>\"
+    \"<menuitem action=\\\"ViewZoomIn\\\"/>\"
+    \"<menuitem action=\\\"ViewZoomOut\\\"/>\"
+    \"<menuitem action=\\\"ViewZoomNormal\\\"/>\"
+    \"<placeholder name=\\\"WallpaperEntry\\\"/>\"
+    \"<separator/>\"
+    \"<menuitem name=\\\"MenuBar\\\" action=\\\"ViewMenuBar\\\"/>\"
+    \"<menuitem name=\\\"Toolbar\\\" action=\\\"ViewToolbar\\\"/>\"
+    \"<menuitem name=\\\"Fullscreen\\\" action=\\\"ViewFullscreen\\\"/>\"
+    \"<separator/>\"
+    \"<menuitem action=\\\"FileProperties\\\"/>\"
+  \"</popup>\"
+  \"<accelerator name=\\\"ControlEqualAccel\\\" action=\\\"ControlEqual\\\"/>\"
+  \"<accelerator name=\\\"ControlKPAddAccel\\\" action=\\\"ControlKpAdd\\\"/>\"
+  \"<accelerator name=\\\"ControlKPSubAccel\\\" action=\\\"ControlKpSub\\\"/>\"
+  \"<accelerator name=\\\"DeleteAccel\\\" action=\\\"Delete\\\"/>\"
+\"</ui>\""
+                :type ("gchar" type (:type "class") nil nil))
+                nil [2306 7345])
+            ("ui_definition_wallpaper" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"<ui>\"
+  \"<menubar name=\\\"MainMenu\\\">\"
+    \"<menu action=\\\"Image\\\">\"
+      \"<placeholder name=\\\"WallpaperEntry\\\">\"
+        \"<separator/>\"
+        \"<menuitem name=\\\"Wallpaper\\\" action=\\\"SetAsWallpaper\\\"/>\"
+      \"</placeholder>\"
+    \"</menu>\"
+  \"</menubar>\"
+  \"<popup name=\\\"ButtonMenu\\\">\"
+    \"<menu action=\\\"Image\\\">\"
+      \"<placeholder name=\\\"WallpaperEntry\\\">\"
+        \"<separator/>\"
+        \"<menuitem name=\\\"Wallpaper\\\" action=\\\"SetAsWallpaper\\\"/>\"
+      \"</placeholder>\"
+    \"</menu>\"
+  \"</popup>\"
+  \"<popup name=\\\"PopupMenu\\\">\"
+    \"<placeholder name=\\\"WallpaperEntry\\\">\"
+      \"<separator/>\"
+      \"<menuitem action=\\\"SetAsWallpaper\\\"/>\"
+    \"</placeholder>\"
+  \"</popup>\"
+\"</ui>\""
+                :type ("gchar" type (:type "class") nil nil))
+                nil [7348 8076])
+            ("vnr_window_update_openwith_menu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8379 8397]))                  
+                :type "void")
+                nil [8334 11805])
+            ("vnr_window_save_accel_map" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [11807 12047])
+            ("vnr_window_load_accel_map" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [12049 12289])
+            ("vnr_window_hide_cursor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12326 12344]))                  
+                :type "void")
+                nil [12291 12492])
+            ("vnr_window_show_cursor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12529 12547]))                  
+                :type "void")
+                nil [12494 12692])
+            ("update_fs_filename_label" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12731 12749]))                  
+                :type "void")
+                nil [12694 13205])
+            ("next_image_src" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13238 13256]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [13207 13622])
+            ("fullscreen_unset_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13661 13679]))                  
+                :type "void")
+                nil [13624 13853])
+            ("fullscreen_set_timeout" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13890 13908]))                  
+                :type "void")
+                nil [13855 14217])
+            ("get_fs_controls" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14254 14272]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [14219 16572])
+            ("scrollbars_visible" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16610 16628]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [16574 16860])
+            ("vnr_window_set_drag" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16894 16912]))                  
+                :type "void")
+                nil [16862 17179])
+            ("vnr_window_fullscreen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17215 17233]))                  
+                :type "void")
+                nil [17181 18978])
+            ("vnr_window_unfullscreen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19016 19034]))                  
+                :type "void")
+                nil [18980 20662])
+            ("stop_slideshow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20691 20709]))                  
+                :type "void")
+                nil [20664 21285])
+            ("start_slideshow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21315 21333]))                  
+                :type "void")
+                nil [21287 22072])
+            ("restart_slideshow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22104 22122]))                  
+                :type "void")
+                nil [22074 22493])
+            ("allow_slideshow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22523 22541]))                  
+                :type "void")
+                nil [22495 22675])
+            ("deny_slideshow" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22697 22715]))                  
+                :type "void")
+                nil [22677 22852])
+            ("rotate_pixbuf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22880 22898])
+                    ("angle" variable (:type ("GdkPixbufRotation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22899 22923]))                  
+                :type "void")
+                nil [22854 25477])
+            ("flip_pixbuf" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25503 25521])
+                    ("horizontal" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25522 25542]))                  
+                :type "void")
+                nil [25479 27753])
+            ("open_with_launch_application_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28056 28074])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28075 28093]))                  
+                :type "void")
+                nil [28011 28470])
+            ("leave_image_area_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28508 28527])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("GdkEventCrossing" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28528 28550])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28551 28569]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [28472 28630])
+            ("fullscreen_motion_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28669 28688])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("GdkEventMotion" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28689 28709])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28710 28728]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [28632 29129])
+            ("fullscreen_timeout_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29194 29212]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [29155 29405])
+            ("spin_value_change_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("spinbutton" variable
+                       (:pointer 1
+                        :type ("GtkSpinButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29441 29467])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29468 29486]))                  
+                :type "void")
+                nil [29407 29877])
+            ("toggle_show_next_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("togglebutton" variable
+                       (:pointer 1
+                        :type ("GtkToggleButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29912 29942])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29943 29961]))                  
+                :type "void")
+                nil [29879 30180])
+            ("save_image_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30209 30227])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30228 30246]))                  
+                :type "void")
+                nil [30182 32670])
+            ("vnr_window_main_menu_position" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("menu" variable
+                       (:pointer 1
+                        :type ("GtkMenu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32715 32729])
+                    ("x" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32730 32738])
+                    ("y" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32739 32747])
+                    ("push_in" variable
+                       (:pointer 1
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32748 32766])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32767 32786]))                  
+                :type "void")
+                nil [32672 33360])
+            ("vnr_window_cmd_open_menu" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkToggleAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33400 33424])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33425 33443]))                  
+                :type "void")
+                nil [33362 33651])
+            ("vnr_window_cmd_main_menu_hidden" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33698 33716])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33717 33736]))                  
+                :type "void")
+                nil [33653 33852])
+            ("leave_fs_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("button" variable
+                       (:pointer 1
+                        :type ("GtkButton" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33879 33897])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33898 33916]))                  
+                :type "void")
+                nil [33854 33958])
+            ("window_realize_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33990 34008])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34009 34028]))                  
+                :type "void")
+                nil [33960 35313])
+            ("window_change_state_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35356 35375])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventWindowState" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35376 35404])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35405 35424]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [35315 35774])
+            ("window_destroy_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("GtkObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35808 35826])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35827 35846]))                  
+                :type "void")
+                nil [35777 35948])
+            ("zoom_changed_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("view" variable
+                       (:pointer 1
+                        :type ("UniImageView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35979 35998])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35999 36017]))                  
+                :type "void")
+                nil [35950 36685])
+            ("window_drag_begin_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36722 36740])
+                    ("drag_context" variable
+                       (:pointer 1
+                        :type ("GdkDragContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36746 36775])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("GtkSelectionData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36781 36804])
+                    ("info" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36810 36821])
+                    ("time" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36827 36838])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36844 36863]))                  
+                :type "void")
+                nil [36688 37073])
+            ("file_open_dialog_response_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dialog" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37117 37135])
+                    ("response_id" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37166 37183])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37214 37232]))                  
+                :type "void")
+                nil [37075 37535])
+            ("vnr_window_cmd_preferences" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37576 37594])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37595 37614]))                  
+                :type "void")
+                nil [37537 37675])
+            ("vnr_window_cmd_flip_horizontal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37720 37738])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37739 37757]))                  
+                :type "void")
+                nil [37677 37883])
+            ("vnr_window_cmd_flip_vertical" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37926 37944])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37945 37963]))                  
+                :type "void")
+                nil [37885 38090])
+            ("vnr_window_cmd_rotate_cw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38129 38147])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38148 38167]))                  
+                :type "void")
+                nil [38092 38242])
+            ("vnr_window_cmd_rotate_ccw" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38282 38300])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38301 38320]))                  
+                :type "void")
+                nil [38244 38402])
+            ("vnr_window_cmd_zoom_in" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38440 38458])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38459 38478]))                  
+                :type "void")
+                nil [38404 38555])
+            ("vnr_window_cmd_zoom_out" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38594 38612])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38613 38632]))                  
+                :type "void")
+                nil [38557 38710])
+            ("vnr_window_cmd_normal_size" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38752 38770])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38771 38790]))                  
+                :type "void")
+                nil [38712 38966])
+            ("vnr_window_cmd_fit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39000 39018])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39019 39038]))                  
+                :type "void")
+                nil [38968 39137])
+            ("vnr_window_cmd_next" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39172 39190])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39191 39210]))                  
+                :type "void")
+                nil [39139 39264])
+            ("vnr_window_cmd_first" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39300 39318])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39319 39338]))                  
+                :type "void")
+                nil [39266 39387])
+            ("vnr_window_cmd_last" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39422 39440])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39441 39460]))                  
+                :type "void")
+                nil [39389 39508])
+            ("vnr_window_cmd_prev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39543 39561])
+                    ("user_data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39562 39581]))                  
+                :type "void")
+                nil [39510 39629])
+            ("vnr_window_cmd_resize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkToggleAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39666 39690])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39691 39709]))                  
+                :type "void")
+                nil [39631 40282])
+            ("vnr_window_cmd_properties" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40323 40341])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40342 40360]))                  
+                :type "void")
+                nil [40284 40439])
+            ("vnr_window_cmd_reload" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40476 40494])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40495 40513]))                  
+                :type "void")
+                nil [40441 40553])
+            ("vnr_window_cmd_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40587 40605])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40606 40624]))                  
+                :type "void")
+                nil [40555 42422])
+            ("vnr_window_cmd_open_dir" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42460 42478])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42479 42497]))                  
+                :type "void")
+                nil [42424 43555])
+            ("vnr_window_cmd_about" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43591 43609])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43610 43628]))                  
+                :type "void")
+                nil [43557 45244])
+            ("vnr_window_cmd_fullscreen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46904 46922])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46923 46941]))                  
+                :type "void")
+                nil [46865 47159])
+            ("vnr_window_cmd_menu_bar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47198 47216])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47217 47235]))                  
+                :type "void")
+                nil [47161 47689])
+            ("vnr_window_cmd_toolbar" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47727 47745])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47746 47764]))                  
+                :type "void")
+                nil [47691 48021])
+            ("vnr_window_cmd_slideshow" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48061 48079])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48080 48098]))                  
+                :type "void")
+                nil [48023 48802])
+            ("vnr_window_cmd_delete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48838 48856])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48857 48875]))                  
+                :type "void")
+                nil [48804 53532])
+            ("vnr_window_cmd_crop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("action" variable
+                       (:pointer 1
+                        :type ("GtkAction" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53566 53584])
+                    ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53585 53603]))                  
+                :type "void")
+                nil [53534 55613])
+            ("action_entries_window" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"File\",  NULL, N_(\"_File\") },
+    { \"Edit\",  NULL, N_(\"_Edit\") },
+    { \"View\",  NULL, N_(\"_View\") },
+    { \"Image\",  NULL, N_(\"_Image\") },
+    { \"Go\",    NULL, N_(\"_Go\") },
+    { \"Help\",  NULL, N_(\"_Help\") },
+
+    { \"FileOpen\", GTK_STOCK_FILE, N_(\"Open _Image...\"), \"<control>O\",
+      N_(\"Open an Image\"),
+      G_CALLBACK (vnr_window_cmd_open) },
+    { \"FileOpenDir\", GTK_STOCK_DIRECTORY, N_(\"Open _Folder...\"), \"<control>F\",
+      N_(\"Open a Folder\"),
+      G_CALLBACK (vnr_window_cmd_open_dir) },
+    { \"FileClose\", GTK_STOCK_CLOSE, N_(\"_Close\"), \"<control>W\",
+      N_(\"Close window\"),
+      G_CALLBACK (gtk_main_quit) },
+    { \"HelpAbout\", GTK_STOCK_ABOUT, N_(\"_About\"), NULL,
+      N_(\"About this application\"),
+      G_CALLBACK (vnr_window_cmd_about) },
+    { \"EditPreferences\", GTK_STOCK_PREFERENCES, N_(\"_Preferences...\"), NULL,
+      N_(\"User preferences for Viewnior\"),
+      G_CALLBACK (vnr_window_cmd_preferences) }
+}"
+                :type ("GtkActionEntry" type (:type "class") nil nil))
+                nil [55615 56610])
+            ("action_entry_save" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"FileSave\", GTK_STOCK_SAVE, N_(\"_Save\"), \"<control>S\",
+      N_(\"Save changes\"),
+      G_CALLBACK (save_image_cb) },
+}"
+                :type ("GtkActionEntry" type (:type "class") nil nil))
+                nil [56612 56789])
+            ("toggle_entry_properties" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"Properties\", GTK_STOCK_PROPERTIES, N_(\"_Properties\"), NULL,
+      N_(\"Properties\"),
+      G_CALLBACK (vnr_window_cmd_open_menu) },
+}"
+                :type ("GtkToggleActionEntry" type (:type "class") nil nil))
+                nil [56791 56995])
+            ("action_entries_image" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"FileOpenWith\", NULL, N_(\"Open _With\"), NULL,
+      N_(\"Open the selected image with a different application\"),
+      NULL},
+    { \"FileDelete\", GTK_STOCK_DELETE, N_(\"_Delete\"), NULL,
+      N_(\"Delete the current file\"),
+      G_CALLBACK (vnr_window_cmd_delete) },
+    { \"FileProperties\", GTK_STOCK_PROPERTIES, N_(\"_Properties...\"), \"<Alt>Return\",
+      N_(\"Show information about the current file\"),
+      G_CALLBACK (vnr_window_cmd_properties) },
+    { \"FileReload\", GTK_STOCK_REFRESH, N_(\"_Reload\"), NULL,
+      N_(\"Reload the current file\"),
+      G_CALLBACK (vnr_window_cmd_reload) },
+    { \"Delete\", NULL, N_(\"_Delete\"), \"Delete\",
+      N_(\"Delete the current file\"),
+      G_CALLBACK (vnr_window_cmd_delete) },
+    { \"ViewZoomIn\", GTK_STOCK_ZOOM_IN, N_(\"_Zoom In\"), \"<control>plus\",
+      N_(\"Enlarge the image\"),
+      G_CALLBACK (vnr_window_cmd_zoom_in) },
+    { \"ViewZoomOut\", GTK_STOCK_ZOOM_OUT, N_(\"Zoom _Out\"), \"<control>minus\",
+      N_(\"Shrink the image\"),
+      G_CALLBACK (vnr_window_cmd_zoom_out) },
+    { \"ViewZoomNormal\", GTK_STOCK_ZOOM_100, N_(\"_Normal Size\"), \"<control>0\",
+      N_(\"Show the image at its normal size\"),
+      G_CALLBACK (vnr_window_cmd_normal_size) },
+    { \"ViewZoomFit\", GTK_STOCK_ZOOM_FIT, N_(\"Best _Fit\"), NULL,
+      N_(\"Fit the image to the window\"),
+      G_CALLBACK (vnr_window_cmd_fit) },
+    { \"ControlEqual\", GTK_STOCK_ZOOM_IN, N_(\"_Zoom In\"), \"<control>equal\",
+      N_(\"Shrink the image\"),
+      G_CALLBACK (vnr_window_cmd_zoom_in) },
+    { \"ControlKpAdd\", GTK_STOCK_ZOOM_IN, N_(\"_Zoom In\"), \"<control>KP_Add\",
+      N_(\"Shrink the image\"),
+      G_CALLBACK (vnr_window_cmd_zoom_in) },
+    { \"ControlKpSub\", GTK_STOCK_ZOOM_OUT, N_(\"Zoom _Out\"), \"<control>KP_Subtract\",
+      N_(\"Shrink the image\"),
+      G_CALLBACK (vnr_window_cmd_zoom_out) },
+}"
+                :type ("GtkActionEntry" type (:type "class") nil nil))
+                nil [57282 59143])
+            ("action_entries_static_image" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"ImageRotateCW\", \"object-rotate-right\", N_(\"Rotate _Clockwise\"), \"<control>R\",
+      N_(\"Rotate image clockwise\"),
+      G_CALLBACK (vnr_window_cmd_rotate_cw) },
+    { \"ImageRotateCCW\", \"object-rotate-left\", N_(\"Rotate _Anti-clockwise\"), \"<control><shift>R\",
+      N_(\"Rotate image anti-clockwise\"),
+      G_CALLBACK (vnr_window_cmd_rotate_ccw) },
+    { \"ImageFlipVertical\", \"object-flip-vertical\", N_(\"Flip _Vertical\"), NULL,
+      N_(\"Flip image vertically\"),
+      G_CALLBACK (vnr_window_cmd_flip_vertical) },
+    { \"ImageFlipHorizontal\", \"object-flip-horizontal\", N_(\"Flip _Horizontal\"), NULL,
+      N_(\"Flip image horizontally\"),
+      G_CALLBACK (vnr_window_cmd_flip_horizontal) },
+    { \"ImageCrop\", NULL, N_(\"Crop...\"), NULL,
+      N_(\"Crop\"),
+      G_CALLBACK (vnr_window_cmd_crop) },
+}"
+                :type ("GtkActionEntry" type (:type "class") nil nil))
+                nil [59145 60009])
+            ("toggle_entries_image" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"ViewFullscreen\", GTK_STOCK_FULLSCREEN, N_(\"Full _Screen\"), \"F11\",
+      N_(\"Show in fullscreen mode\"),
+      G_CALLBACK (vnr_window_cmd_fullscreen) },
+    { \"ViewResizeWindow\", NULL, N_(\"_Adjust window size\"), NULL,
+      N_(\"Adjust window size to fit the image\"),
+      G_CALLBACK (vnr_window_cmd_resize) },
+}"
+                :type ("GtkToggleActionEntry" type (:type "class") nil nil))
+                nil [60011 60390])
+            ("toggle_entries_window" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"ViewMenuBar\", NULL, N_(\"Menu Bar\"), NULL,
+      N_(\"Show Menu Bar\"),
+      G_CALLBACK (vnr_window_cmd_menu_bar) },
+    { \"ViewToolbar\", NULL, N_(\"Toolbar\"), NULL,
+      N_(\"Show Toolbar\"),
+      G_CALLBACK (vnr_window_cmd_toolbar) },
+}"
+                :type ("GtkToggleActionEntry" type (:type "class") nil nil))
+                nil [60392 60697])
+            ("toggle_entries_collection" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"ViewSlideshow\", GTK_STOCK_NETWORK, N_(\"Sli_deshow\"), \"F5\",
+      N_(\"Show in slideshow mode\"),
+      G_CALLBACK (vnr_window_cmd_slideshow) },
+}"
+                :type ("GtkToggleActionEntry" type (:type "class") nil nil))
+                nil [60699 60916])
+            ("action_entries_collection" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    { \"GoPrevious\", GTK_STOCK_GO_BACK, N_(\"_Previous Image\"), \"<Alt>Left\",
+      N_(\"Go to the previous image of the collection\"),
+      G_CALLBACK (vnr_window_cmd_prev) },
+    { \"GoNext\", GTK_STOCK_GO_FORWARD, N_(\"_Next Image\"), \"<Alt>Right\",
+      N_(\"Go to the next image of the collection\"),
+      G_CALLBACK (vnr_window_cmd_next) },
+    { \"GoFirst\", GTK_STOCK_GOTO_FIRST, N_(\"_First Image\"), \"<Alt>Home\",
+      N_(\"Go to the first image of the collection\"),
+      G_CALLBACK (vnr_window_cmd_first) },
+    { \"GoLast\", GTK_STOCK_GOTO_LAST, N_(\"_Last Image\"), \"<Alt>End\",
+      N_(\"Go to the last image of the collection\"),
+      G_CALLBACK (vnr_window_cmd_last) },
+}"
+                :type ("GtkActionEntry" type (:type "class") nil nil))
+                nil [60918 61648])
+            ("vnr_window_key_press" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61929 61947])
+                    ("event" variable
+                       (:pointer 1
+                        :type ("GdkEventKey" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61948 61967]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [61895 64757])
+            ("vnr_window_drag_data_received" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("widget" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64802 64820])
+                    ("context" variable
+                       (:pointer 1
+                        :type ("GdkDragContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64852 64876])
+                    ("x" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64908 64915])
+                    ("y" variable (:type ("gint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64916 64923])
+                    ("selection_data" variable
+                       (:pointer 1
+                        :type ("GtkSelectionData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64955 64988])
+                    ("info" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65020 65031])
+                    ("time" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65032 65043]))                  
+                :type "void")
+                nil [64759 65907])
+            ("vnr_window_class_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("klass" variable
+                       (:pointer 1
+                        :type ("VnrWindowClass" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65944 65967]))                  
+                :type "void")
+                nil [65909 66161])
+            ("vnr_window_new" function
+               (:pointer 1
+                :type ("GtkWindow" type (:type "class") nil nil))
+                nil [66163 66259])
+            ("vnr_window_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66290 66309]))                  
+                :type "void")
+                nil [66261 77834])
+            ("vnr_window_open" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78054 78073])
+                    ("fit_to_screen" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78074 78097]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [78028 81176])
+            ("vnr_window_open_from_list" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81209 81227])
+                    ("uri_list" variable
+                       (:pointer 1
+                        :type ("GSList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81228 81245]))                  
+                :type "void")
+                nil [81178 83088])
+            ("vnr_window_close" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83112 83130]))                  
+                :type "void")
+                nil [83090 83467])
+            ("vnr_window_set_list" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83495 83513])
+                    ("list" variable
+                       (:pointer 1
+                        :type ("GList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83514 83526])
+                    ("free_current" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83527 83549]))                  
+                :type "void")
+                nil [83469 83977])
+            ("vnr_window_next" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84005 84023])
+                    ("rem_timeout" variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84024 84045]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [83979 85212])
+            ("vnr_window_prev" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85240 85258]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [85214 86398])
+            ("vnr_window_first" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86427 86445]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [86400 87110])
+            ("vnr_window_last" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87138 87156]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [87112 87820])
+            ("vnr_window_apply_preferences" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87857 87875]))                  
+                :type "void")
+                nil [87822 88592])
+            ("vnr_window_toggle_fullscreen" function
+               (:arguments 
+                  ( ("window" variable
+                       (:pointer 1
+                        :type ("VnrWindow" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88629 88647]))                  
+                :type "void")
+                nil [88594 88859]))          
+      :file "vnr-window.c"
+      :pointmax 88860
+      :fsize 88860
+      :lastmodtime '(22327 50146 802842 534000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_" (spp-arg-list ("String") 808 . 816) . ((symbol "gettext" 817 . 824) (semantic-list "(String)" 825 . 833)))
+          ("FULLSCREEN_TIMEOUT" . ((number "1000" 1287 . 1291)))
+          )
+)
+    (semanticdb-table "vnr-window.h"
+      :file "vnr-window.h"
+      :fsize 3899
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "uni-scroll-win.h"
+      :file "uni-scroll-win.h"
+      :fsize 2403
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "uni-anim-view.h"
+      :file "uni-anim-view.h"
+      :fsize 2974
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "vnr-tools.h"
+      :file "vnr-tools.h"
+      :fsize 1334
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "vnr-file.h"
+      :file "vnr-file.h"
+      :fsize 2002
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "vnr-message-area.h"
+      :file "vnr-message-area.h"
+      :fsize 3091
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "vnr-properties-dialog.h"
+      :file "vnr-properties-dialog.h"
+      :fsize 2958
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "vnr-crop.h"
+      :file "vnr-crop.h"
+      :fsize 2226
+      :lastmodtime '(22130 58339 0 0))
+    (semanticdb-table "uni-exiv2.hpp"
+      :file "uni-exiv2.hpp"
+      :fsize 3058
+      :lastmodtime '(22130 58339 0 0)))
+  :file "!tmp!a!community!viewnior!src!Viewnior-viewnior-1.6!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,82 @@
+;; Object laptops/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "laptops/"
+  :tables
+  (list
+    (semanticdb-table "dslm.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [93 112])
+            ("stdlib.h" include (:system-flag t) nil [113 132])
+            ("stdio.h" include (:system-flag t) nil [133 151])
+            ("fcntl.h" include (:system-flag t) nil [152 170])
+            ("errno.h" include (:system-flag t) nil [171 189])
+            ("time.h" include (:system-flag t) nil [190 207])
+            ("string.h" include (:system-flag t) nil [208 227])
+            ("signal.h" include (:system-flag t) nil [228 247])
+            ("sys/ioctl.h" include (:system-flag t) nil [248 270])
+            ("linux/hdreg.h" include (:system-flag t) nil [271 295])
+            ("D" variable (:constant-flag t) nil [339 340])
+            ("endit" variable
+               (:default-value "0"
+                :type "int")
+                nil [352 366])
+            ("check_powermode" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [530 537]))                  
+                :type "int")
+                nil [503 1007])
+            ("state_name" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1033 1039]))                  
+                :type "char")
+                nil [1009 1176])
+            ("myctime" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1199 1211]))                  
+                :type "char")
+                nil [1178 1288])
+            ("measure" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1310 1317]))                  
+                :type "void")
+                nil [1290 2872])
+            ("ender" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type "int") (reparse-symbol arg-sub-list) [2892 2898]))                  
+                :type "void")
+                nil [2874 2917])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2937 2942]))                  
+                :type "void")
+                nil [2919 3003])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3014 3023])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3024 3036]))                  
+                :type "int")
+                nil [3005 3682]))          
+      :file "dslm.c"
+      :pointmax 3683
+      :fsize 3682
+      :lastmodtime '(22115 59019 505201 75000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("D" (spp-arg-list ("x") 340 . 343))
+          )
+))
+  :file "!home!marcus!git!linux!Documentation!laptops!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

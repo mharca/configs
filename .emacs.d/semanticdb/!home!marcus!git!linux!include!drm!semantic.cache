@@ -1,0 +1,3477 @@
+;; Object drm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "drm/"
+  :tables
+  (list
+    (semanticdb-table "drmP.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_DRM_P_H_" variable (:constant-flag t) nil [1506 1515])
+            ("linux/agp_backend.h" include (:system-flag t) nil [1517 1547])
+            ("linux/cdev.h" include (:system-flag t) nil [1548 1571])
+            ("linux/dma-mapping.h" include (:system-flag t) nil [1572 1602])
+            ("linux/file.h" include (:system-flag t) nil [1603 1626])
+            ("linux/fs.h" include (:system-flag t) nil [1627 1648])
+            ("linux/highmem.h" include (:system-flag t) nil [1649 1675])
+            ("linux/idr.h" include (:system-flag t) nil [1676 1698])
+            ("linux/init.h" include (:system-flag t) nil [1699 1722])
+            ("linux/io.h" include (:system-flag t) nil [1723 1744])
+            ("linux/jiffies.h" include (:system-flag t) nil [1745 1771])
+            ("linux/kernel.h" include (:system-flag t) nil [1772 1797])
+            ("linux/kref.h" include (:system-flag t) nil [1798 1821])
+            ("linux/miscdevice.h" include (:system-flag t) nil [1822 1851])
+            ("linux/mm.h" include (:system-flag t) nil [1852 1873])
+            ("linux/mutex.h" include (:system-flag t) nil [1874 1898])
+            ("linux/pci.h" include (:system-flag t) nil [1899 1921])
+            ("linux/platform_device.h" include (:system-flag t) nil [1922 1956])
+            ("linux/poll.h" include (:system-flag t) nil [1957 1980])
+            ("linux/ratelimit.h" include (:system-flag t) nil [1981 2009])
+            ("linux/sched.h" include (:system-flag t) nil [2010 2034])
+            ("linux/slab.h" include (:system-flag t) nil [2035 2058])
+            ("linux/types.h" include (:system-flag t) nil [2059 2083])
+            ("linux/vmalloc.h" include (:system-flag t) nil [2084 2110])
+            ("linux/workqueue.h" include (:system-flag t) nil [2111 2139])
+            ("asm/mman.h" include (:system-flag t) nil [2141 2162])
+            ("asm/pgalloc.h" include (:system-flag t) nil [2163 2187])
+            ("asm/uaccess.h" include (:system-flag t) nil [2188 2212])
+            ("uapi/drm/drm.h" include (:system-flag t) nil [2214 2239])
+            ("uapi/drm/drm_mode.h" include (:system-flag t) nil [2240 2270])
+            ("drm/drm_agpsupport.h" include (:system-flag t) nil [2272 2303])
+            ("drm/drm_crtc.h" include (:system-flag t) nil [2304 2329])
+            ("drm/drm_global.h" include (:system-flag t) nil [2330 2357])
+            ("drm/drm_hashtab.h" include (:system-flag t) nil [2358 2386])
+            ("drm/drm_mem_util.h" include (:system-flag t) nil [2387 2416])
+            ("drm/drm_mm.h" include (:system-flag t) nil [2417 2440])
+            ("drm/drm_os_linux.h" include (:system-flag t) nil [2441 2470])
+            ("drm/drm_sarea.h" include (:system-flag t) nil [2471 2497])
+            ("drm/drm_vma_manager.h" include (:system-flag t) nil [2498 2530])
+            ("module" type
+               (:prototype t
+                :type "struct")
+                nil [2532 2546])
+            ("drm_file" type
+               (:prototype t
+                :type "struct")
+                nil [2548 2564])
+            ("drm_device" type
+               (:prototype t
+                :type "struct")
+                nil [2565 2583])
+            ("drm_agp_head" type
+               (:prototype t
+                :type "struct")
+                nil [2584 2604])
+            ("drm_local_map" type
+               (:prototype t
+                :type "struct")
+                nil [2605 2626])
+            ("drm_device_dma" type
+               (:prototype t
+                :type "struct")
+                nil [2627 2649])
+            ("drm_dma_handle" type
+               (:prototype t
+                :type "struct")
+                nil [2650 2672])
+            ("drm_gem_object" type
+               (:prototype t
+                :type "struct")
+                nil [2673 2695])
+            ("device_node" type
+               (:prototype t
+                :type "struct")
+                nil [2697 2716])
+            ("videomode" type
+               (:prototype t
+                :type "struct")
+                nil [2717 2734])
+            ("reservation_object" type
+               (:prototype t
+                :type "struct")
+                nil [2735 2761])
+            ("dma_buf_attachment" type
+               (:prototype t
+                :type "struct")
+                nil [2762 2788])
+            ("DRM_UT_CORE" variable (:constant-flag t) nil [4053 4064])
+            ("DRM_UT_DRIVER" variable (:constant-flag t) nil [4080 4093])
+            ("DRM_UT_KMS" variable (:constant-flag t) nil [4108 4118])
+            ("DRM_UT_PRIME" variable (:constant-flag t) nil [4133 4145])
+            ("DRM_UT_ATOMIC" variable (:constant-flag t) nil [4160 4173])
+            ("DRM_UT_VBL" variable (:constant-flag t) nil [4188 4198])
+            ("drm_ut_debug_printk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("function_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4253 4279])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4284 4303])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [4304 4308]))                  
+                :type "void")
+                nil [4228 4309])
+            ("drm_err" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4345 4364])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [4365 4369]))                  
+                :type "void")
+                nil [4332 4370])
+            ("DRIVER_USE_AGP" variable (:constant-flag t) nil [4559 4573])
+            ("DRIVER_PCI_DMA" variable (:constant-flag t) nil [4588 4602])
+            ("DRIVER_SG" variable (:constant-flag t) nil [4617 4626])
+            ("DRIVER_HAVE_DMA" variable (:constant-flag t) nil [4642 4657])
+            ("DRIVER_HAVE_IRQ" variable (:constant-flag t) nil [4673 4688])
+            ("DRIVER_IRQ_SHARED" variable (:constant-flag t) nil [4704 4721])
+            ("DRIVER_GEM" variable (:constant-flag t) nil [4736 4746])
+            ("DRIVER_MODESET" variable (:constant-flag t) nil [4764 4778])
+            ("DRIVER_PRIME" variable (:constant-flag t) nil [4796 4808])
+            ("DRIVER_RENDER" variable (:constant-flag t) nil [4826 4839])
+            ("DRIVER_ATOMIC" variable (:constant-flag t) nil [4857 4870])
+            ("DRIVER_KMS_LEGACY_CONTEXT" variable (:constant-flag t) nil [4889 4914])
+            ("DRM_ERROR" variable (:constant-flag t) nil [5151 5160])
+            ("DRM_ERROR_RATELIMITED" variable (:constant-flag t) nil [5365 5386])
+            ("DRM_INFO" variable (:constant-flag t) nil [5625 5633])
+            ("DRM_INFO_ONCE" variable (:constant-flag t) nil [5714 5727])
+            ("DRM_DEBUG" variable (:constant-flag t) nil [5908 5917])
+            ("DRM_DEBUG_DRIVER" variable (:constant-flag t) nil [6070 6086])
+            ("DRM_DEBUG_KMS" variable (:constant-flag t) nil [6238 6251])
+            ("DRM_DEBUG_PRIME" variable (:constant-flag t) nil [6401 6416])
+            ("DRM_DEBUG_ATOMIC" variable (:constant-flag t) nil [6568 6584])
+            ("DRM_DEBUG_VBL" variable (:constant-flag t) nil [6736 6749])
+            ("DRM_IF_VERSION" variable (:constant-flag t) nil [7033 7047])
+            ("drm_ioctl_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7259 7282])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7283 7294])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7298 7325]))                  
+                :type "int")
+                nil [7243 7326])
+            ("drm_ioctl_compat_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7359 7377])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7378 7395])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7406 7424]))                  
+                :type "int")
+                nil [7336 7425])
+            ("DRM_IOCTL_NR" variable (:constant-flag t) nil [7435 7447])
+            ("DRM_MAJOR" variable (:constant-flag t) nil [7485 7494])
+            ("DRM_AUTH" variable (:constant-flag t) nil [7514 7522])
+            ("DRM_MASTER" variable (:constant-flag t) nil [7535 7545])
+            ("DRM_ROOT_ONLY" variable (:constant-flag t) nil [7558 7571])
+            ("DRM_CONTROL_ALLOW" variable (:constant-flag t) nil [7584 7601])
+            ("DRM_UNLOCKED" variable (:constant-flag t) nil [7614 7626])
+            ("DRM_RENDER_ALLOW" variable (:constant-flag t) nil [7640 7656])
+            ("drm_ioctl_desc" type
+               (:members 
+                  ( ("cmd" variable (:type "unsigned int") (reparse-symbol classsubparts) [7688 7705])
+                    ("flags" variable (:type "int") (reparse-symbol classsubparts) [7707 7717])
+                    ("func" variable
+                       (:pointer 1
+                        :type ("drm_ioctl_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7719 7737])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [7739 7756]))                  
+                :type "struct")
+                nil [7663 7759])
+            ("DRM_IOCTL_DEF_DRV" variable (:constant-flag t) nil [7884 7901])
+            ("drm_pending_event" type
+               (:members 
+                  ( ("event" variable
+                       (:pointer 1
+                        :type ("drm_event" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8172 8196])
+                    ("link" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8198 8220])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [8222 8249])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8251 8261])
+                    ("destroy" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("drm_pending_event" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [8386 8418]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [8370 8419]))                  
+                :type "struct")
+                nil [8144 8422])
+            ("drm_prime_file_private" type
+               (:members 
+                  ( ("head" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8520 8542])
+                    ("lock" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [8544 8562]))                  
+                :type "struct")
+                nil [8487 8565])
+            ("drm_file" type
+               (:members 
+                  ( ("authenticated" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [8611 8637])
+                    ("is_master" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [8706 8728])
+                    ("stereo_allowed" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [8802 8829])
+                    ("universal_planes" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [8931 8959])
+                    ("atomic" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [9013 9031])
+                    ("allowed_master" variable
+                       (:suffix ":1"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [9158 9184])
+                    ("pid" variable
+                       (:pointer 1
+                        :type ("pid" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9187 9203])
+                    ("uid" variable (:type ("kuid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9205 9216])
+                    ("magic" variable (:type ("drm_magic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9218 9236])
+                    ("lhead" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9238 9261])
+                    ("minor" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9263 9287])
+                    ("lock_count" variable (:type "unsigned long") (reparse-symbol classsubparts) [9289 9314])
+                    ("object_idr" variable (:type ("idr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9374 9396])
+                    ("table_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9456 9478])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9481 9499])
+                    ("driver_priv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [9501 9519])
+                    ("master" variable
+                       (:pointer 1
+                        :type ("drm_master" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [9522 9548])
+                    ("fbs" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9845 9866])
+                    ("fbs_lock" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9868 9890])
+                    ("blobs" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9978 10001])
+                    ("event_wait" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10004 10033])
+                    ("event_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10035 10063])
+                    ("event_space" variable (:type "int") (reparse-symbol classsubparts) [10065 10081])
+                    ("prime" variable (:type ("drm_prime_file_private" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10084 10120]))                  
+                :type "struct")
+                nil [8592 10123])
+            ("drm_lock_data" type
+               (:members 
+                  ( ("hw_lock" variable
+                       (:pointer 1
+                        :type ("drm_hw_lock" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10171 10199])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10275 10302])
+                    ("lock_queue" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10304 10333])
+                    ("lock_time" variable (:type "unsigned long") (reparse-symbol classsubparts) [10370 10394])
+                    ("spinlock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10433 10453])
+                    ("kernel_waiters" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10455 10479])
+                    ("user_waiters" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10481 10503])
+                    ("idle_has_lock" variable (:type "int") (reparse-symbol classsubparts) [10505 10523]))                  
+                :type "struct")
+                nil [10147 10526])
+            ("drm_master" type
+               (:members 
+                  ( ("refcount" variable (:type ("kref" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11033 11054])
+                    ("minor" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [11056 11080])
+                    ("unique" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [11082 11095])
+                    ("unique_len" variable (:type "int") (reparse-symbol classsubparts) [11097 11112])
+                    ("magic_map" variable (:type ("idr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11114 11135])
+                    ("lock" variable (:type ("drm_lock_data" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [11137 11163])
+                    ("driver_priv" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [11165 11183]))                  
+                :type "struct")
+                nil [11012 11186])
+            ("DRM_VBLANKTIME_RBSIZE" variable (:constant-flag t) nil [11294 11315])
+            ("DRM_CALLED_FROM_VBLIRQ" variable (:constant-flag t) nil [11400 11422])
+            ("DRM_VBLANKTIME_SCANOUTPOS_METHOD" variable (:constant-flag t) nil [11433 11465])
+            ("DRM_VBLANKTIME_IN_VBLANK" variable (:constant-flag t) nil [11483 11507])
+            ("DRM_SCANOUTPOS_VALID" variable (:constant-flag t) nil [11576 11596])
+            ("DRM_SCANOUTPOS_IN_VBLANK" variable (:constant-flag t) nil [11621 11645])
+            ("DRM_SCANOUTPOS_ACCURATE" variable (:constant-flag t) nil [11666 11689])
+            ("drm_driver" type
+               (:members 
+                  ( ("load" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11904 11924])
+                            ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [11925 11945]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11891 11946])
+                    ("firstopen" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [11966 11986]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11948 11987])
+                    ("open" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12002 12022])
+                            ("" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12023 12041]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [11989 12042])
+                    ("preclose" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12062 12082])
+                            ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12083 12110]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12044 12111])
+                    ("postclose" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12132 12152])
+                            ("" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12153 12171]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12113 12172])
+                    ("lastclose" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12193 12213]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [12174 12214])
+                    ("unload" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12231 12251]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12216 12252])
+                    ("suspend" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12270 12290])
+                            ("state" variable (:type ("pm_message_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12291 12310]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12254 12311])
+                    ("resume" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12328 12348]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12313 12349])
+                    ("dma_ioctl" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12369 12392])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [12393 12404])
+                            ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12405 12432]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12351 12433])
+                    ("dma_quiescent" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12457 12477]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12435 12478])
+                    ("context_dtor" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12501 12524])
+                            ("context" variable (:type "int") (reparse-symbol arg-sub-list) [12525 12537]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12480 12538])
+                    ("set_busid" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12557 12580])
+                            ("master" variable
+                               (:pointer 1
+                                :type ("drm_master" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [12581 12607]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [12540 12608])
+                    ("get_vblank_counter" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13216 13239])
+                            ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13240 13258]))                          
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13189 13259])
+                    ("enable_vblank" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13718 13741])
+                            ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [13742 13760]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13696 13761])
+                    ("disable_vblank" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14109 14132])
+                            ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14133 14151]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [14085 14152])
+                    ("device_is_agp" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [14552 14575]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [14530 14576])
+                    ("get_scanout_position" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16051 16074])
+                            ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16075 16093])
+                            ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16103 16122])
+                            ("vpos" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [16123 16133])
+                            ("hpos" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [16134 16144])
+                            ("stime" variable
+                               (:pointer 1
+                                :type ("ktime_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16154 16169])
+                            ("etime" variable
+                               (:pointer 1
+                                :type ("ktime_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [16170 16185])
+                            ("mode" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("drm_display_mode" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [16195 16231]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [16022 16232])
+                    ("get_vblank_timestamp" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17907 17930])
+                            ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17931 17949])
+                            ("max_error" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [17959 17974])
+                            ("vblank_time" variable
+                               (:pointer 1
+                                :type ("timeval" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [17984 18012])
+                            ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [18022 18037]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [17878 18038])
+                    ("irq_handler" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [18103 18111])
+                            ("arg" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [18112 18122]))                          
+                        :type ("irqreturn_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [18076 18123])
+                    ("irq_preinstall" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18149 18172]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18125 18173])
+                    ("irq_postinstall" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18199 18222]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [18175 18223])
+                    ("irq_uninstall" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18248 18271]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18225 18272])
+                    ("master_create" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18319 18342])
+                            ("master" variable
+                               (:pointer 1
+                                :type ("drm_master" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18343 18369]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [18298 18370])
+                    ("master_destroy" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18395 18418])
+                            ("master" variable
+                               (:pointer 1
+                                :type ("drm_master" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18419 18445]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18372 18446])
+                    ("master_set" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18600 18623])
+                            ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18624 18651])
+                            ("from_open" variable (:type "bool") (reparse-symbol arg-sub-list) [18657 18672]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [18582 18673])
+                    ("master_drop" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18695 18718])
+                            ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18719 18746])
+                            ("from_release" variable (:type "bool") (reparse-symbol arg-sub-list) [18754 18772]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18675 18773])
+                    ("debugfs_init" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("minor" variable
+                               (:pointer 1
+                                :type ("drm_minor" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18796 18820]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [18776 18821])
+                    ("debugfs_cleanup" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("minor" variable
+                               (:pointer 1
+                                :type ("drm_minor" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [18847 18871]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [18823 18872])
+                    ("gem_free_object" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19028 19055]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19003 19056])
+                    ("gem_open_object" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19082 19106])
+                            ("" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19107 19125]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [19058 19126])
+                    ("gem_close_object" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19154 19178])
+                            ("" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19179 19197]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19128 19198])
+                    ("prime_handle_to_fd" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19310 19333])
+                            ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19334 19361])
+                            ("handle" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19366 19382])
+                            ("flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19383 19398])
+                            ("prime_fd" variable
+                               (:pointer 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [19399 19413]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [19284 19414])
+                    ("prime_fd_to_handle" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19511 19534])
+                            ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19535 19562])
+                            ("prime_fd" variable (:type "int") (reparse-symbol arg-sub-list) [19567 19580])
+                            ("handle" variable
+                               (:pointer 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19581 19598]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [19485 19599])
+                    ("gem_prime_export" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19666 19689])
+                            ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19694 19721])
+                            ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [19722 19732]))                          
+                        :type ("dma_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [19629 19733])
+                    ("gem_prime_import" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19807 19830])
+                            ("dma_buf" variable
+                               (:pointer 1
+                                :type ("dma_buf" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19835 19859]))                          
+                        :type ("drm_gem_object" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [19763 19860])
+                    ("gem_prime_pin" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [19948 19975]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [19927 19976])
+                    ("gem_prime_unpin" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20002 20029]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [19978 20030])
+                    ("gem_prime_res_obj" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20086 20113]))                          
+                        :type ("reservation_object" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [20032 20114])
+                    ("gem_prime_get_sg_table" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20159 20186]))                          
+                        :type ("sg_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [20116 20187])
+                    ("gem_prime_import_sg_table" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20246 20269])
+                            ("attach" variable
+                               (:pointer 1
+                                :type ("dma_buf_attachment" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20274 20308])
+                            ("sgt" variable
+                               (:pointer 1
+                                :type ("sg_table" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20313 20334]))                          
+                        :type ("drm_gem_object" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [20189 20335])
+                    ("gem_prime_vmap" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20361 20388]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20337 20389])
+                    ("gem_prime_vunmap" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20416 20443])
+                            ("vaddr" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [20444 20456]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20391 20457])
+                    ("gem_prime_mmap" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("obj" variable
+                               (:pointer 1
+                                :type ("drm_gem_object" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20481 20508])
+                            ("vma" variable
+                               (:pointer 1
+                                :type ("vm_area_struct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20513 20540]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [20459 20541])
+                    ("vgaarb_irq" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20590 20613])
+                            ("state" variable (:type "bool") (reparse-symbol arg-sub-list) [20614 20625]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [20571 20626])
+                    ("dumb_create" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20674 20701])
+                            ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20708 20731])
+                            ("args" variable
+                               (:pointer 1
+                                :type ("drm_mode_create_dumb" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20738 20772]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [20655 20773])
+                    ("dumb_map_offset" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20798 20825])
+                            ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20836 20859])
+                            ("handle" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20860 20876])
+                            ("offset" variable
+                               (:pointer 1
+                                :type ("uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20887 20904]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [20775 20905])
+                    ("dumb_destroy" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("file_priv" variable
+                               (:pointer 1
+                                :type ("drm_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20927 20954])
+                            ("dev" variable
+                               (:pointer 1
+                                :type ("drm_device" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [20962 20985])
+                            ("handle" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20993 21009]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [20907 21010])
+                    ("gem_vm_ops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("vm_operations_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21055 21101])
+                    ("major" variable (:type "int") (reparse-symbol classsubparts) [21104 21114])
+                    ("minor" variable (:type "int") (reparse-symbol classsubparts) [21116 21126])
+                    ("patchlevel" variable (:type "int") (reparse-symbol classsubparts) [21128 21143])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [21145 21156])
+                    ("desc" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [21158 21169])
+                    ("date" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [21171 21182])
+                    ("driver_features" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21185 21205])
+                    ("dev_priv_size" variable (:type "int") (reparse-symbol classsubparts) [21207 21225])
+                    ("ioctls" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_ioctl_desc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21227 21263])
+                    ("num_ioctls" variable (:type "int") (reparse-symbol classsubparts) [21265 21280])
+                    ("fops" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("file_operations" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21282 21317])
+                    ("legacy_dev_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [21388 21421]))                  
+                :type "struct")
+                nil [11870 21424])
+            ("drm_minor_type" type
+               (:members 
+                  ( ("DRM_MINOR_LEGACY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21449 21466])
+                    ("DRM_MINOR_CONTROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21468 21486])
+                    ("DRM_MINOR_RENDER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21488 21505])
+                    ("DRM_MINOR_CNT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [21507 21521]))                  
+                :type "enum")
+                nil [21426 21524])
+            ("drm_info_list" type
+               (:members 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [21665 21682])
+                    ("show" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("seq_file" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [21713 21730])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [21731 21737]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [21701 21738])
+                    ("driver_features" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [21761 21781])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [21831 21842]))                  
+                :type "struct")
+                nil [21641 21845])
+            ("drm_info_node" type
+               (:members 
+                  ( ("list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [21948 21970])
+                    ("minor" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21972 21996])
+                    ("info_ent" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_info_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [21998 22035])
+                    ("dent" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22037 22057]))                  
+                :type "struct")
+                nil [21924 22060])
+            ("drm_minor" type
+               (:members 
+                  ( ("index" variable (:type "int") (reparse-symbol classsubparts) [22160 22170])
+                    ("type" variable (:type "int") (reparse-symbol classsubparts) [22202 22211])
+                    ("kdev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22261 22281])
+                    ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22305 22328])
+                    ("debugfs_root" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22331 22359])
+                    ("debugfs_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [22362 22392])
+                    ("debugfs_lock" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [22394 22420])
+                    ("master" variable
+                       (:pointer 1
+                        :type ("drm_master" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22524 22550]))                  
+                :type "struct")
+                nil [22140 22553])
+            ("drm_pending_vblank_event" type
+               (:members 
+                  ( ("base" variable (:type ("drm_pending_event" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [22591 22621])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol classsubparts) [22623 22641])
+                    ("event" variable (:type ("drm_event_vblank" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [22643 22673]))                  
+                :type "struct")
+                nil [22556 22676])
+            ("drm_vblank_crtc" type
+               (:members 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [22704 22727])
+                    ("queue" variable (:type ("wait_queue_head_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22762 22786])
+                    ("disable_timer" variable (:type ("timer_list" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [22814 22846])
+                    ("count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [22947 22957])
+                    ("time" variable
+                       (:dereference 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [23031 23074])
+                    ("refcount" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23077 23095])
+                    ("last" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23149 23158])
+                    ("last_wait" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [23236 23250])
+                    ("inmodeset" variable (:type "unsigned int") (reparse-symbol classsubparts) [23294 23317])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol classsubparts) [23357 23375])
+                    ("framedur_ns" variable (:type "int") (reparse-symbol classsubparts) [23395 23411])
+                    ("linedur_ns" variable (:type "int") (reparse-symbol classsubparts) [23447 23462])
+                    ("enabled" variable (:type "bool") (reparse-symbol classsubparts) [23492 23505]))                  
+                :type "struct")
+                nil [22678 23575])
+            ("drm_device" type
+               (:members 
+                  ( ("legacy_dev_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [23708 23741])
+                    ("if_version" variable (:type "int") (reparse-symbol classsubparts) [23804 23819])
+                    ("ref" variable (:type ("kref" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [23905 23921])
+                    ("dev" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [23949 23968])
+                    ("driver" variable
+                       (:pointer 1
+                        :type ("drm_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [24010 24036])
+                    ("dev_private" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [24077 24095])
+                    ("control" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [24130 24156])
+                    ("primary" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [24180 24206])
+                    ("render" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [24230 24255])
+                    ("unplugged" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24278 24297])
+                    ("anon_inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [24334 24359])
+                    ("unique" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [24402 24415])
+                    ("struct_mutex" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [24493 24519])
+                    ("master_mutex" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [24540 24566])
+                    ("open_count" variable (:type "int") (reparse-symbol classsubparts) [24675 24690])
+                    ("buf_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24757 24777])
+                    ("buf_use" variable (:type "int") (reparse-symbol classsubparts) [24836 24848])
+                    ("buf_alloc" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [24891 24910])
+                    ("filelist" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [24961 24987])
+                    ("maplist" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [25031 25056])
+                    ("map_hash" variable (:type ("drm_open_hash" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [25089 25119])
+                    ("ctxlist" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [25210 25235])
+                    ("ctxlist_mutex" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [25276 25303])
+                    ("ctx_idr" variable (:type ("idr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [25326 25345])
+                    ("vmalist" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [25348 25373])
+                    ("dma" variable
+                       (:pointer 1
+                        :type ("drm_device_dma" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [25458 25485])
+                    ("context_flag" variable (:type "long") (reparse-symbol classsubparts) [25592 25610])
+                    ("last_context" variable (:type "int") (reparse-symbol classsubparts) [25642 25659])
+                    ("irq_enabled" variable (:type "bool") (reparse-symbol classsubparts) [25743 25760])
+                    ("irq" variable (:type "int") (reparse-symbol classsubparts) [25762 25770])
+                    ("vblank_disable_allowed" variable (:type "bool") (reparse-symbol classsubparts) [26023 26051])
+                    ("vblank_disable_immediate" variable (:type "bool") (reparse-symbol classsubparts) [26360 26390])
+                    ("vblank" variable
+                       (:pointer 1
+                        :type ("drm_vblank_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [26424 26455])
+                    ("vblank_time_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26458 26486])
+                    ("vbl_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26567 26587])
+                    ("max_vblank_count" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26590 26611])
+                    ("vblank_event_list" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [26693 26728])
+                    ("event_lock" variable (:type ("spinlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [26730 26752])
+                    ("agp" variable
+                       (:pointer 1
+                        :type ("drm_agp_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [26765 26790])
+                    ("pdev" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [26810 26831])
+                    ("platformdev" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [26918 26954])
+                    ("virtdev" variable
+                       (:pointer 1
+                        :type ("virtio_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [26989 27019])
+                    ("sg" variable
+                       (:pointer 1
+                        :type ("drm_sg_mem" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [27022 27044])
+                    ("num_crtcs" variable (:type "unsigned int") (reparse-symbol classsubparts) [27076 27099])
+                    ("sigdata" variable (:type ("" type
+                         (:members 
+                            ( ("context" variable (:type "int") (reparse-symbol classsubparts) [27169 27181])
+                              ("lock" variable
+                                 (:pointer 1
+                                  :type ("drm_hw_lock" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [27184 27209]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [27158 27221])
+                    ("agp_buffer_map" variable
+                       (:pointer 1
+                        :type ("drm_local_map" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [27224 27261])
+                    ("agp_buffer_token" variable (:type "unsigned int") (reparse-symbol classsubparts) [27263 27293])
+                    ("mode_config" variable (:type ("drm_mode_config" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [27296 27331])
+                    ("object_name_lock" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [27401 27431])
+                    ("object_name_idr" variable (:type ("idr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [27433 27460])
+                    ("vma_offset_manager" variable
+                       (:pointer 1
+                        :type ("drm_vma_offset_manager" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [27462 27512])
+                    ("switch_power_state" variable (:type "int") (reparse-symbol classsubparts) [27523 27546]))                  
+                :type "struct")
+                nil [23687 27549])
+            ("DRM_SWITCH_POWER_ON" variable (:constant-flag t) nil [27559 27578])
+            ("DRM_SWITCH_POWER_OFF" variable (:constant-flag t) nil [27589 27609])
+            ("DRM_SWITCH_POWER_CHANGING" variable (:constant-flag t) nil [27620 27645])
+            ("DRM_SWITCH_POWER_DYNAMIC_OFF" variable (:constant-flag t) nil [27656 27684])
+            ("drm_core_check_feature" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27733 27756])
+                    ("feature" variable (:type "int") (reparse-symbol arg-sub-list) [27767 27779]))                  
+                :type "int")
+                nil [27706 27843])
+            ("drm_device_set_unplugged" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27889 27912]))                  
+                :type "void")
+                nil [27845 27961])
+            ("drm_device_is_unplugged" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28005 28028]))                  
+                :type "int")
+                nil [27963 28098])
+            ("drm_is_render_client" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("file_priv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28140 28173]))                  
+                :type "bool")
+                nil [28100 28229])
+            ("drm_is_control_client" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("file_priv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28272 28305]))                  
+                :type "bool")
+                nil [28231 28362])
+            ("drm_is_primary_client" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("file_priv" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28405 28438]))                  
+                :type "bool")
+                nil [28364 28494])
+            ("drm_ioctl_permit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("flags" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28681 28691])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28692 28719]))                  
+                :type "int")
+                nil [28653 28720])
+            ("drm_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28743 28761])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28770 28787])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [28788 28806]))                  
+                :type "long")
+                nil [28721 28807])
+            ("drm_compat_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28837 28855])
+                    ("cmd" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28864 28881])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [28882 28900]))                  
+                :type "long")
+                nil [28808 28901])
+            ("drm_ioctl_flags" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("nr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28930 28946])
+                    ("flags" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [28947 28967]))                  
+                :type "bool")
+                nil [28902 28968])
+            ("drm_open" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29028 29048])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29049 29067]))                  
+                :type "int")
+                nil [29008 29068])
+            ("drm_read" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29093 29111])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [29112 29125])
+                    ("" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29125 29132])
+                    ("count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29136 29149])
+                    ("offset" variable
+                       (:pointer 1
+                        :type ("loff_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29150 29165]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [29069 29166])
+            ("drm_release" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29190 29210])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29211 29229]))                  
+                :type "int")
+                nil [29167 29230])
+            ("drm_new_set_master" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29261 29284])
+                    ("fpriv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29285 29308]))                  
+                :type "int")
+                nil [29231 29309])
+            ("drm_poll" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29377 29395])
+                    ("wait" variable
+                       (:pointer 1
+                        :type ("poll_table_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29396 29427]))                  
+                :type "unsigned int")
+                nil [29348 29428])
+            ("drm_noop" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29483 29506])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29507 29518])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29525 29552]))                  
+                :type "int")
+                nil [29470 29553])
+            ("drm_invalid_op" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29573 29596])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29597 29608])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29614 29641]))                  
+                :type "int")
+                nil [29554 29642])
+            ("drm_clflush_pages" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pages" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29704 29725])
+                    ("num_pages" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [29726 29750]))                  
+                :type "void")
+                nil [29681 29751])
+            ("drm_clflush_sg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 1
+                        :type ("sg_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [29772 29792]))                  
+                :type "void")
+                nil [29752 29793])
+            ("drm_clflush_virt_range" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29822 29833])
+                    ("length" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [29834 29855]))                  
+                :type "void")
+                nil [29794 29856])
+            ("drm_irq_install" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30075 30098])
+                    ("irq" variable (:type "int") (reparse-symbol arg-sub-list) [30099 30107]))                  
+                :type "int")
+                nil [30048 30108])
+            ("drm_irq_uninstall" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30138 30161]))                  
+                :type "int")
+                nil [30109 30162])
+            ("drm_vblank_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30191 30214])
+                    ("num_crtcs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30215 30238]))                  
+                :type "int")
+                nil [30164 30239])
+            ("drm_wait_vblank" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30267 30290])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30291 30302])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30309 30331]))                  
+                :type "int")
+                nil [30240 30332])
+            ("drm_vblank_count" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30361 30384])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30385 30403]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [30333 30404])
+            ("drm_crtc_vblank_count" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30438 30460]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [30405 30461])
+            ("drm_vblank_count_and_time" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30499 30522])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30523 30541])
+                    ("vblanktime" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30551 30578]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [30462 30579])
+            ("drm_crtc_vblank_count_and_time" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30622 30644])
+                    ("vblanktime" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30652 30679]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [30580 30680])
+            ("drm_send_vblank_event" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30715 30738])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30739 30757])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("drm_pending_vblank_event" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30764 30799]))                  
+                :type "void")
+                nil [30681 30800])
+            ("drm_crtc_send_vblank_event" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30840 30862])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("drm_pending_vblank_event" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30874 30909]))                  
+                :type "void")
+                nil [30801 30910])
+            ("drm_arm_vblank_event" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30944 30967])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [30968 30986])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("drm_pending_vblank_event" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [30992 31027]))                  
+                :type "void")
+                nil [30911 31028])
+            ("drm_crtc_arm_vblank_event" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31067 31089])
+                    ("e" variable
+                       (:pointer 1
+                        :type ("drm_pending_vblank_event" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31100 31135]))                  
+                :type "void")
+                nil [31029 31136])
+            ("drm_handle_vblank" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31167 31190])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31191 31209]))                  
+                :type "bool")
+                nil [31137 31210])
+            ("drm_crtc_handle_vblank" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31246 31268]))                  
+                :type "bool")
+                nil [31211 31269])
+            ("drm_vblank_get" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31296 31319])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31320 31338]))                  
+                :type "int")
+                nil [31270 31339])
+            ("drm_vblank_put" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31367 31390])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31391 31409]))                  
+                :type "void")
+                nil [31340 31410])
+            ("drm_crtc_vblank_get" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31442 31464]))                  
+                :type "int")
+                nil [31411 31465])
+            ("drm_crtc_vblank_put" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31498 31520]))                  
+                :type "void")
+                nil [31466 31521])
+            ("drm_wait_one_vblank" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31554 31577])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31578 31596]))                  
+                :type "void")
+                nil [31522 31597])
+            ("drm_crtc_wait_one_vblank" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31635 31657]))                  
+                :type "void")
+                nil [31598 31658])
+            ("drm_vblank_off" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31686 31709])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31710 31728]))                  
+                :type "void")
+                nil [31659 31729])
+            ("drm_vblank_on" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31756 31779])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [31780 31798]))                  
+                :type "void")
+                nil [31730 31799])
+            ("drm_crtc_vblank_off" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31832 31854]))                  
+                :type "void")
+                nil [31800 31855])
+            ("drm_crtc_vblank_reset" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31890 31912]))                  
+                :type "void")
+                nil [31856 31913])
+            ("drm_crtc_vblank_on" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [31945 31967]))                  
+                :type "void")
+                nil [31914 31968])
+            ("drm_vblank_cleanup" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32000 32023]))                  
+                :type "void")
+                nil [31969 32024])
+            ("drm_vblank_no_hw_counter" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32061 32084])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32085 32103]))                  
+                :type ("u32" type (:type "class") nil nil))
+                nil [32025 32104])
+            ("drm_calc_vbltimestamp_from_scanoutpos" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32155 32178])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32186 32204])
+                    ("max_error" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [32205 32220])
+                    ("vblank_time" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32228 32256])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32264 32279])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_display_mode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32287 32323]))                  
+                :type "int")
+                nil [32106 32324])
+            ("drm_calc_timestamping_constants" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32369 32391])
+                    ("mode" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_display_mode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32401 32437]))                  
+                :type "void")
+                nil [32325 32438])
+            ("drm_crtc_vblank_waitqueue" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("crtc" variable
+                       (:pointer 1
+                        :type ("drm_crtc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32775 32797]))                  
+                :type ("wait_queue_head_t" type (:type "class") nil nil))
+                nil [32716 32857])
+            ("drm_vblank_pre_modeset" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [32920 32943])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32944 32962]))                  
+                :type "void")
+                nil [32885 32963])
+            ("drm_vblank_post_modeset" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33000 33023])
+                    ("pipe" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [33024 33042]))                  
+                :type "void")
+                nil [32964 33043])
+            ("drm_master_get" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 1
+                        :type ("drm_master" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33122 33148]))                  
+                :type ("drm_master" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [33081 33149])
+            ("drm_master_put" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("master" variable
+                       (:pointer 2
+                        :type ("drm_master" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33177 33204]))                  
+                :type "void")
+                nil [33150 33205])
+            ("drm_put_dev" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33231 33254]))                  
+                :type "void")
+                nil [33207 33255])
+            ("drm_unplug_dev" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33283 33306]))                  
+                :type "void")
+                nil [33256 33307])
+            ("drm_debug" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [33308 33338])
+            ("drm_atomic" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [33339 33362])
+            ("drm_debugfs_create_files" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("files" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_info_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33729 33763])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [33772 33782])
+                    ("root" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33783 33803])
+                    ("minor" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33812 33836]))                  
+                :type "int")
+                nil [33686 33851])
+            ("drm_debugfs_remove_files" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("files" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("drm_info_list" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33896 33930])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [33939 33949])
+                    ("minor" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [33950 33974]))                  
+                :type "int")
+                nil [33853 33989])
+            ("drm_gem_prime_export" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34042 34065])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("drm_gem_object" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34068 34095])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [34096 34106]))                  
+                :type ("dma_buf" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [33998 34107])
+            ("drm_gem_prime_handle_to_fd" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34146 34169])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34172 34199])
+                    ("handle" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34200 34216])
+                    ("flags" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34217 34232])
+                    ("prime_fd" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [34235 34249]))                  
+                :type "int")
+                nil [34108 34250])
+            ("drm_gem_prime_import" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34302 34325])
+                    ("dma_buf" variable
+                       (:pointer 1
+                        :type ("dma_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34328 34352]))                  
+                :type ("drm_gem_object" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [34251 34353])
+            ("drm_gem_prime_fd_to_handle" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34392 34415])
+                    ("file_priv" variable
+                       (:pointer 1
+                        :type ("drm_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34418 34445])
+                    ("prime_fd" variable (:type "int") (reparse-symbol arg-sub-list) [34446 34459])
+                    ("handle" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34460 34477]))                  
+                :type "int")
+                nil [34354 34478])
+            ("drm_gem_dmabuf_release" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dma_buf" variable
+                       (:pointer 1
+                        :type ("dma_buf" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34514 34538]))                  
+                :type "void")
+                nil [34479 34539])
+            ("drm_prime_sg_to_page_addr_arrays" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sgt" variable
+                       (:pointer 1
+                        :type ("sg_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34585 34606])
+                    ("pages" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34607 34627])
+                    ("addrs" variable
+                       (:pointer 1
+                        :type ("dma_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34637 34655])
+                    ("max_pages" variable (:type "int") (reparse-symbol arg-sub-list) [34656 34670]))                  
+                :type "int")
+                nil [34541 34671])
+            ("drm_prime_pages_to_sg" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("pages" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34718 34738])
+                    ("nr_pages" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [34739 34761]))                  
+                :type ("sg_table" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [34672 34762])
+            ("drm_prime_gem_destroy" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("drm_gem_object" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34797 34824])
+                    ("sg" variable
+                       (:pointer 1
+                        :type ("sg_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34825 34845]))                  
+                :type "void")
+                nil [34763 34846])
+            ("drm_pci_alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34893 34916])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34917 34929])
+                    ("align" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34939 34952]))                  
+                :type ("drm_dma_handle" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [34849 34953])
+            ("drm_pci_free" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [34979 35002])
+                    ("dmah" variable
+                       (:pointer 1
+                        :type ("drm_dma_handle" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35003 35032]))                  
+                :type "void")
+                nil [34954 35033])
+            ("drm_sysfs_hotplug_event" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35115 35138]))                  
+                :type "void")
+                nil [35079 35139])
+            ("drm_dev_alloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("driver" variable
+                       (:pointer 1
+                        :type ("drm_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35175 35201])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35207 35229]))                  
+                :type ("drm_device" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [35142 35230])
+            ("drm_dev_ref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35248 35271]))                  
+                :type "void")
+                nil [35231 35272])
+            ("drm_dev_unref" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35292 35315]))                  
+                :type "void")
+                nil [35273 35316])
+            ("drm_dev_register" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35338 35361])
+                    ("flags" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [35362 35382]))                  
+                :type "int")
+                nil [35317 35383])
+            ("drm_dev_unregister" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35408 35431]))                  
+                :type "void")
+                nil [35384 35432])
+            ("drm_dev_set_unique" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35456 35479])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [35480 35496])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [35497 35501]))                  
+                :type "int")
+                nil [35433 35502])
+            ("drm_minor_acquire" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("minor_id" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [35540 35562]))                  
+                :type ("drm_minor" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [35504 35563])
+            ("drm_minor_release" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("minor" variable
+                       (:pointer 1
+                        :type ("drm_minor" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35587 35611]))                  
+                :type "void")
+                nil [35564 35612])
+            ("drm_pci_device_is_agp" function
+               (:arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35684 35707]))                  
+                :type "int")
+                nil [35658 35901])
+            ("drm_pci_agp_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35927 35950]))                  
+                :type "void")
+                nil [35902 35951])
+            ("drm_pci_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("driver" variable
+                       (:pointer 1
+                        :type ("drm_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [35977 36003])
+                    ("pdriver" variable
+                       (:pointer 1
+                        :type ("pci_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36004 36031]))                  
+                :type "int")
+                nil [35953 36032])
+            ("drm_pci_exit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("driver" variable
+                       (:pointer 1
+                        :type ("drm_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36058 36084])
+                    ("pdriver" variable
+                       (:pointer 1
+                        :type ("pci_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36085 36112]))                  
+                :type "void")
+                nil [36033 36113])
+            ("drm_get_pci_dev" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("pdev" variable
+                       (:pointer 1
+                        :type ("pci_dev" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36375 36396])
+                    ("ent" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pci_device_id" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36403 36435])
+                    ("driver" variable
+                       (:pointer 1
+                        :type ("drm_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36442 36468]))                  
+                :type "int")
+                nil [36341 36489])
+            ("drm_pci_set_busid" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36527 36550])
+                    ("master" variable
+                       (:pointer 1
+                        :type ("drm_master" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36559 36585]))                  
+                :type "int")
+                nil [36491 36606])
+            ("DRM_PCIE_SPEED_25" variable (:constant-flag t) nil [36623 36640])
+            ("DRM_PCIE_SPEED_50" variable (:constant-flag t) nil [36651 36668])
+            ("DRM_PCIE_SPEED_80" variable (:constant-flag t) nil [36679 36696])
+            ("drm_pcie_get_speed_cap_mask" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("dev" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36739 36762])
+                    ("speed_mask" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36763 36779]))                  
+                :type "int")
+                nil [36700 36780])
+            ("drm_platform_init" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("driver" variable
+                       (:pointer 1
+                        :type ("drm_driver" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36834 36860])
+                    ("platform_device" variable
+                       (:pointer 1
+                        :type ("platform_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36861 36901]))                  
+                :type "int")
+                nil [36805 36902])
+            ("drm_platform_set_busid" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("d" variable
+                       (:pointer 1
+                        :type ("drm_device" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36937 36958])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("drm_master" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36959 36980]))                  
+                :type "int")
+                nil [36903 36981])
+            ("drm_can_sleep" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [37066 37071]))                  
+                :type "bool")
+                nil [37047 37161]))          
+      :file "drmP.h"
+      :pointmax 37170
+      :fsize 37169
+      :lastmodtime '(22115 59023 751867 897000)
+      :unmatched-syntax '((symbol 37036 . 37046) (STATIC 37029 . 37035) (symbol 35647 . 35657) (STATIC 35640 . 35646) (punctuation 29124 . 29125) (symbol 27695 . 27705) (STATIC 27688 . 27694) (symbol 25579 . 25591) (TYPEDEF 7328 . 7335) (TYPEDEF 7235 . 7242) (semantic-list 4325 . 4331) (symbol 4317 . 4325) (number 4329 . 4330) (number 4326 . 4327) (EXTERN 4310 . 4316) (number 4329 . 4330) (number 4326 . 4327) (semantic-list 4221 . 4227) (symbol 4213 . 4221) (number 4225 . 4226) (number 4222 . 4223) (EXTERN 4206 . 4212) (number 4225 . 4226) (number 4222 . 4223))
+      :lexical-table 
+        '(("DRM_UT_DRIVER" . ((number "0x02" 4095 . 4099)))
+          ("DRM_AUTH" . ((number "0x1" 7523 . 7526)))
+          ("DRM_VBLANKTIME_IN_VBLANK" . ((semantic-list "(1 << 1)" 11516 . 11524)))
+          ("DRM_INFO" (spp-arg-list ("fmt" "...") 5633 . 5643) . ((symbol "printk" 5650 . 5656) (semantic-list "(KERN_INFO \"[\" DRM_NAME \"] \" fmt, ##__VA_ARGS__)" 5656 . 5704)))
+          ("DRM_SCANOUTPOS_IN_VBLANK" . ((semantic-list "(1 << 1)" 11649 . 11657)))
+          ("DRM_SWITCH_POWER_OFF" . ((number "1" 27610 . 27611)))
+          ("DRM_SWITCH_POWER_DYNAMIC_OFF" . ((number "3" 27685 . 27686)))
+          ("DRM_PCIE_SPEED_25" . ((number "1" 36641 . 36642)))
+          ("DRM_PCIE_SPEED_80" . ((number "4" 36697 . 36698)))
+          ("DRIVER_USE_AGP" . ((number "0x1" 4576 . 4579)))
+          ("DRM_MASTER" . ((number "0x2" 7546 . 7549)))
+          ("DRM_SCANOUTPOS_VALID" . ((semantic-list "(1 << 0)" 11604 . 11612)))
+          ("DRM_UT_VBL" . ((number "0x20" 4200 . 4204)))
+          ("DRIVER_HAVE_IRQ" . ((number "0x40" 4691 . 4695)))
+          ("DRIVER_ATOMIC" . ((number "0x10000" 4873 . 4880)))
+          ("DRM_ERROR" (spp-arg-list ("fmt" "...") 5160 . 5170) . ((symbol "drm_err" 5177 . 5184) (semantic-list "(fmt, ##__VA_ARGS__)" 5184 . 5204)))
+          ("DRM_ERROR_RATELIMITED" (spp-arg-list ("fmt" "...") 5386 . 5396) . ((semantic-list "({									\\
+	static DEFINE_RATELIMIT_STATE(_rs,				\\
+				      DEFAULT_RATELIMIT_INTERVAL,	\\
+				      DEFAULT_RATELIMIT_BURST);		\\
+									\\
+	if (__ratelimit(&_rs))						\\
+		drm_err(fmt, ##__VA_ARGS__);				\\
+})" 5402 . 5615)))
+          ("DRM_MAJOR" . ((number "226" 7501 . 7504)))
+          ("DRIVER_KMS_LEGACY_CONTEXT" . ((number "0x20000" 4915 . 4922)))
+          ("DRM_DEBUG_VBL" (spp-arg-list ("fmt" "args...") 6749 . 6763) . 
+              ((DO "do" 6771 . 6773) (semantic-list "{								\\
+		if (unlikely(drm_debug & DRM_UT_VBL))			\\
+			drm_ut_debug_printk(__func__, fmt, ##args);	\\
+	}" 6774 . 6880) (WHILE "while" 6881 . 6886) (semantic-list "(0)" 6887 . 6890)))
+          ("DRM_IOCTL_NR" (spp-arg-list ("n") 7447 . 7450) . ((symbol "_IOC_NR" 7466 . 7473) (semantic-list "(n)" 7473 . 7476)))
+          ("DRM_CONTROL_ALLOW" . ((number "0x8" 7602 . 7605)))
+          ("DRM_CALLED_FROM_VBLIRQ" . ((number "1" 11423 . 11424)))
+          ("DRM_UT_ATOMIC" . ((number "0x10" 4175 . 4179)))
+          ("DRIVER_HAVE_DMA" . ((number "0x20" 4660 . 4664)))
+          ("DRM_UNLOCKED" . ((number "0x10" 7627 . 7631)))
+          ("DRM_VBLANKTIME_RBSIZE" . ((number "2" 11316 . 11317)))
+          ("DRM_SWITCH_POWER_ON" . ((number "0" 27579 . 27580)))
+          ("DRM_PCIE_SPEED_50" . ((number "2" 36669 . 36670)))
+          ("DRIVER_GEM" . ((number "0x1000" 4749 . 4755)))
+          ("DRIVER_RENDER" . ((number "0x8000" 4842 . 4848)))
+          ("DRM_INFO_ONCE" (spp-arg-list ("fmt" "...") 5727 . 5737) . ((symbol "printk_once" 5744 . 5755) (semantic-list "(KERN_INFO \"[\" DRM_NAME \"] \" fmt, ##__VA_ARGS__)" 5755 . 5803)))
+          ("DRM_DEBUG" (spp-arg-list ("fmt" "args...") 5917 . 5931) . 
+              ((DO "do" 5940 . 5942) (semantic-list "{								\\
+		if (unlikely(drm_debug & DRM_UT_CORE))			\\
+			drm_ut_debug_printk(__func__, fmt, ##args);	\\
+	}" 5943 . 6050) (WHILE "while" 6051 . 6056) (semantic-list "(0)" 6057 . 6060)))
+          ("DRM_DEBUG_DRIVER" (spp-arg-list ("fmt" "args...") 6086 . 6100) . 
+              ((DO "do" 6108 . 6110) (semantic-list "{								\\
+		if (unlikely(drm_debug & DRM_UT_DRIVER))		\\
+			drm_ut_debug_printk(__func__, fmt, ##args);	\\
+	}" 6111 . 6219) (WHILE "while" 6220 . 6225) (semantic-list "(0)" 6226 . 6229)))
+          ("DRIVER_IRQ_SHARED" . ((number "0x80" 4723 . 4727)))
+          ("DRIVER_PRIME" . ((number "0x4000" 4811 . 4817)))
+          ("DRM_SWITCH_POWER_CHANGING" . ((number "2" 27646 . 27647)))
+          ("DRM_DEBUG_PRIME" (spp-arg-list ("fmt" "args...") 6416 . 6430) . 
+              ((DO "do" 6438 . 6440) (semantic-list "{								\\
+		if (unlikely(drm_debug & DRM_UT_PRIME))			\\
+			drm_ut_debug_printk(__func__, fmt, ##args);	\\
+	}" 6441 . 6549) (WHILE "while" 6550 . 6555) (semantic-list "(0)" 6556 . 6559)))
+          ("DRM_RENDER_ALLOW" . ((number "0x20" 7657 . 7661)))
+          ("DRM_UT_KMS" . ((number "0x04" 4120 . 4124)))
+          ("DRM_IF_VERSION" (spp-arg-list ("maj" "min") 7047 . 7057) . ((semantic-list "(maj << 16 | min)" 7058 . 7075)))
+          ("DRM_ROOT_ONLY" . ((number "0x4" 7572 . 7575)))
+          ("DRIVER_SG" . ((number "0x10" 4629 . 4633)))
+          ("DRM_DEBUG_KMS" (spp-arg-list ("fmt" "args...") 6251 . 6265) . 
+              ((DO "do" 6273 . 6275) (semantic-list "{								\\
+		if (unlikely(drm_debug & DRM_UT_KMS))			\\
+			drm_ut_debug_printk(__func__, fmt, ##args);	\\
+	}" 6276 . 6382) (WHILE "while" 6383 . 6388) (semantic-list "(0)" 6389 . 6392)))
+          ("_DRM_P_H_")
+          ("DRIVER_MODESET" . ((number "0x2000" 4781 . 4787)))
+          ("DRM_DEBUG_ATOMIC" (spp-arg-list ("fmt" "args...") 6584 . 6598) . 
+              ((DO "do" 6606 . 6608) (semantic-list "{								\\
+		if (unlikely(drm_debug & DRM_UT_ATOMIC))		\\
+			drm_ut_debug_printk(__func__, fmt, ##args);	\\
+	}" 6609 . 6717) (WHILE "while" 6718 . 6723) (semantic-list "(0)" 6724 . 6727)))
+          ("DRM_IOCTL_DEF_DRV" (spp-arg-list ("ioctl" "_func" "_flags") 7901 . 7923) . 
+              ((semantic-list "[DRM_IOCTL_NR(DRM_IOCTL_##ioctl) - DRM_COMMAND_BASE]" 7930 . 7982) (punctuation "=" 7983 . 7984) (semantic-list "{	\\
+		.cmd = DRM_IOCTL_##ioctl,				\\
+		.func = _func,						\\
+		.flags = _flags,					\\
+		.name = #ioctl						\\
+	 }" 7985 . 8098)))
+          ("DRM_VBLANKTIME_SCANOUTPOS_METHOD" . ((semantic-list "(1 << 0)" 11466 . 11474)))
+          ("DRM_UT_CORE" . ((number "0x01" 4067 . 4071)))
+          ("DRM_UT_PRIME" . ((number "0x08" 4147 . 4151)))
+          ("DRIVER_PCI_DMA" . ((number "0x8" 4605 . 4608)))
+          ("DRM_SCANOUTPOS_ACCURATE" . ((semantic-list "(1 << 2)" 11694 . 11702)))
+          )
+)
+    (semanticdb-table "i915_drm.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_I915_DRM_H_" variable (:constant-flag t) nil [1246 1258])
+            ("drm/i915_pciids.h" include (:system-flag t) nil [1260 1288])
+            ("uapi/drm/i915_drm.h" include (:system-flag t) nil [1289 1319])
+            ("i915_read_mch_val" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1388 1393]))                  
+                :type "unsigned long")
+                nil [1349 1394])
+            ("i915_gpu_raise" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1422 1427]))                  
+                :type "bool")
+                nil [1395 1428])
+            ("i915_gpu_lower" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1456 1461]))                  
+                :type "bool")
+                nil [1429 1462])
+            ("i915_gpu_busy" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1489 1494]))                  
+                :type "bool")
+                nil [1463 1495])
+            ("i915_gpu_turbo_disable" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1531 1536]))                  
+                :type "bool")
+                nil [1496 1537])
+            ("INTEL_GMCH_CTRL" variable (:constant-flag t) nil [1790 1805])
+            ("INTEL_GMCH_VGA_DISABLE" variable (:constant-flag t) nil [1820 1842])
+            ("SNB_GMCH_CTRL" variable (:constant-flag t) nil [1861 1874])
+            ("SNB_GMCH_GGMS_SHIFT" variable (:constant-flag t) nil [1892 1911])
+            ("SNB_GMCH_GGMS_MASK" variable (:constant-flag t) nil [1956 1974])
+            ("SNB_GMCH_GMS_SHIFT" variable (:constant-flag t) nil [1990 2008])
+            ("SNB_GMCH_GMS_MASK" variable (:constant-flag t) nil [2051 2068])
+            ("BDW_GMCH_GGMS_SHIFT" variable (:constant-flag t) nil [2088 2107])
+            ("BDW_GMCH_GGMS_MASK" variable (:constant-flag t) nil [2121 2139])
+            ("BDW_GMCH_GMS_SHIFT" variable (:constant-flag t) nil [2155 2173])
+            ("BDW_GMCH_GMS_MASK" variable (:constant-flag t) nil [2189 2206])
+            ("I830_GMCH_CTRL" variable (:constant-flag t) nil [2224 2238])
+            ("I830_GMCH_GMS_MASK" variable (:constant-flag t) nil [2255 2273])
+            ("I830_GMCH_GMS_LOCAL" variable (:constant-flag t) nil [2288 2307])
+            ("I830_GMCH_GMS_STOLEN_512" variable (:constant-flag t) nil [2322 2346])
+            ("I830_GMCH_GMS_STOLEN_1024" variable (:constant-flag t) nil [2360 2385])
+            ("I830_GMCH_GMS_STOLEN_8192" variable (:constant-flag t) nil [2399 2424])
+            ("I855_GMCH_GMS_MASK" variable (:constant-flag t) nil [2439 2457])
+            ("I855_GMCH_GMS_STOLEN_0M" variable (:constant-flag t) nil [2472 2495])
+            ("I855_GMCH_GMS_STOLEN_1M" variable (:constant-flag t) nil [2509 2532])
+            ("I855_GMCH_GMS_STOLEN_4M" variable (:constant-flag t) nil [2553 2576])
+            ("I855_GMCH_GMS_STOLEN_8M" variable (:constant-flag t) nil [2597 2620])
+            ("I855_GMCH_GMS_STOLEN_16M" variable (:constant-flag t) nil [2641 2665])
+            ("I855_GMCH_GMS_STOLEN_32M" variable (:constant-flag t) nil [2685 2709])
+            ("I915_GMCH_GMS_STOLEN_48M" variable (:constant-flag t) nil [2729 2753])
+            ("I915_GMCH_GMS_STOLEN_64M" variable (:constant-flag t) nil [2773 2797])
+            ("G33_GMCH_GMS_STOLEN_128M" variable (:constant-flag t) nil [2817 2841])
+            ("G33_GMCH_GMS_STOLEN_256M" variable (:constant-flag t) nil [2861 2885])
+            ("INTEL_GMCH_GMS_STOLEN_96M" variable (:constant-flag t) nil [2905 2930])
+            ("INTEL_GMCH_GMS_STOLEN_160M" variable (:constant-flag t) nil [2950 2976])
+            ("INTEL_GMCH_GMS_STOLEN_224M" variable (:constant-flag t) nil [2996 3022])
+            ("INTEL_GMCH_GMS_STOLEN_352M" variable (:constant-flag t) nil [3042 3068])
+            ("I830_DRB3" variable (:constant-flag t) nil [3089 3098])
+            ("I85X_DRB3" variable (:constant-flag t) nil [3113 3122])
+            ("I865_TOUD" variable (:constant-flag t) nil [3137 3146])
+            ("I830_ESMRAMC" variable (:constant-flag t) nil [3162 3174])
+            ("I845_ESMRAMC" variable (:constant-flag t) nil [3189 3201])
+            ("I85X_ESMRAMC" variable (:constant-flag t) nil [3216 3228])
+            ("TSEG_ENABLE" variable (:constant-flag t) nil [3246 3257])
+            ("I830_TSEG_SIZE_512K" variable (:constant-flag t) nil [3279 3298])
+            ("I830_TSEG_SIZE_1M" variable (:constant-flag t) nil [3319 3336])
+            ("I845_TSEG_SIZE_MASK" variable (:constant-flag t) nil [3357 3376])
+            ("I845_TSEG_SIZE_512K" variable (:constant-flag t) nil [3397 3416])
+            ("I845_TSEG_SIZE_1M" variable (:constant-flag t) nil [3437 3454]))          
+      :file "i915_drm.h"
+      :pointmax 3494
+      :fsize 3493
+      :lastmodtime '(22115 59023 755201 230000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_I915_DRM_H_")
+          ("I830_GMCH_GMS_STOLEN_8192" . ((number "0x40" 2425 . 2429)))
+          ("G33_GMCH_GMS_STOLEN_128M" . ((semantic-list "(0x8 << 4)" 2842 . 2852)))
+          ("SNB_GMCH_GGMS_SHIFT" . ((number "8" 1912 . 1913)))
+          ("I915_GMCH_GMS_STOLEN_64M" . ((semantic-list "(0x7 << 4)" 2798 . 2808)))
+          ("I85X_ESMRAMC" . ((number "0x61" 3230 . 3234)))
+          ("INTEL_GMCH_VGA_DISABLE" . ((semantic-list "(1 << 1)" 1844 . 1852)))
+          ("INTEL_GMCH_GMS_STOLEN_352M" . ((semantic-list "(0xd << 4)" 3069 . 3079)))
+          ("I865_TOUD" . ((number "0xc4" 3148 . 3152)))
+          ("SNB_GMCH_GMS_MASK" . ((number "0x1f" 2072 . 2076)))
+          ("I855_GMCH_GMS_STOLEN_32M" . ((semantic-list "(0x5 << 4)" 2710 . 2720)))
+          ("INTEL_GMCH_GMS_STOLEN_160M" . ((semantic-list "(0xb << 4)" 2977 . 2987)))
+          ("I830_ESMRAMC" . ((number "0x91" 3176 . 3180)))
+          ("I845_TSEG_SIZE_512K" . ((semantic-list "(2 << 1)" 3417 . 3425)))
+          ("I830_GMCH_GMS_STOLEN_1024" . ((number "0x30" 2386 . 2390)))
+          ("I855_GMCH_GMS_STOLEN_8M" . ((semantic-list "(0x3 << 4)" 2622 . 2632)))
+          ("BDW_GMCH_GGMS_MASK" . ((number "0x3" 2140 . 2143)))
+          ("I855_GMCH_GMS_MASK" . ((number "0xF0" 2459 . 2463)))
+          ("I855_GMCH_GMS_STOLEN_4M" . ((semantic-list "(0x2 << 4)" 2578 . 2588)))
+          ("INTEL_GMCH_CTRL" . ((number "0x52" 1807 . 1811)))
+          ("I855_GMCH_GMS_STOLEN_0M" . ((number "0x0" 2497 . 2500)))
+          ("INTEL_GMCH_GMS_STOLEN_224M" . ((semantic-list "(0xc << 4)" 3023 . 3033)))
+          ("I85X_DRB3" . ((number "0x43" 3124 . 3128)))
+          ("TSEG_ENABLE" . ((semantic-list "(1 << 0)" 3259 . 3267)))
+          ("INTEL_GMCH_GMS_STOLEN_96M" . ((semantic-list "(0xa << 4)" 2931 . 2941)))
+          ("SNB_GMCH_GGMS_MASK" . ((number "0x3" 1975 . 1978)))
+          ("BDW_GMCH_GGMS_SHIFT" . ((number "6" 2108 . 2109)))
+          ("BDW_GMCH_GMS_SHIFT" . ((number "8" 2176 . 2177)))
+          ("I915_GMCH_GMS_STOLEN_48M" . ((semantic-list "(0x6 << 4)" 2754 . 2764)))
+          ("I830_DRB3" . ((number "0x63" 3100 . 3104)))
+          ("I845_TSEG_SIZE_1M" . ((semantic-list "(3 << 1)" 3455 . 3463)))
+          ("I830_GMCH_CTRL" . ((number "0x52" 2241 . 2245)))
+          ("I855_GMCH_GMS_STOLEN_1M" . ((semantic-list "(0x1 << 4)" 2534 . 2544)))
+          ("G33_GMCH_GMS_STOLEN_256M" . ((semantic-list "(0x9 << 4)" 2886 . 2896)))
+          ("SNB_GMCH_CTRL" . ((number "0x50" 1876 . 1880)))
+          ("I830_GMCH_GMS_MASK" . ((number "0x70" 2275 . 2279)))
+          ("I830_GMCH_GMS_STOLEN_512" . ((number "0x20" 2347 . 2351)))
+          ("I855_GMCH_GMS_STOLEN_16M" . ((semantic-list "(0x4 << 4)" 2666 . 2676)))
+          ("I845_ESMRAMC" . ((number "0x9e" 3203 . 3207)))
+          ("I830_TSEG_SIZE_512K" . ((semantic-list "(0 << 1)" 3299 . 3307)))
+          ("I830_TSEG_SIZE_1M" . ((semantic-list "(1 << 1)" 3337 . 3345)))
+          ("I845_TSEG_SIZE_MASK" . ((semantic-list "(3 << 1)" 3377 . 3385)))
+          ("SNB_GMCH_GMS_SHIFT" . ((number "3" 2011 . 2012)))
+          ("BDW_GMCH_GMS_MASK" . ((number "0xff" 2210 . 2214)))
+          ("I830_GMCH_GMS_LOCAL" . ((number "0x10" 2309 . 2313)))
+          )
+)
+    (semanticdb-table "drm_agpsupport.h"
+      :file "drm_agpsupport.h"
+      :fsize 3853
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_crtc.h"
+      :file "drm_crtc.h"
+      :fsize 58251
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_global.h"
+      :file "drm_global.h"
+      :fsize 2011
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_hashtab.h"
+      :file "drm_hashtab.h"
+      :fsize 3139
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_mem_util.h"
+      :file "drm_mem_util.h"
+      :fsize 2043
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_mm.h"
+      :file "drm_mm.h"
+      :fsize 10430
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_os_linux.h"
+      :file "drm_os_linux.h"
+      :fsize 2230
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_vma_manager.h"
+      :file "drm_vma_manager.h"
+      :fsize 8219
+      :lastmodtime '(22115 59023 755201 230000))
+    (semanticdb-table "i915_pciids.h"
+      :file "i915_pciids.h"
+      :fsize 11040
+      :lastmodtime '(22115 59023 755201 230000))
+    (semanticdb-table "intel-gtt.h"
+      :file "intel-gtt.h"
+      :fsize 847
+      :lastmodtime '(22115 59023 755201 230000))
+    (semanticdb-table "drm_legacy.h"
+      :file "drm_legacy.h"
+      :fsize 6814
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_gem.h"
+      :file "drm_gem.h"
+      :fsize 6130
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_crtc_helper.h"
+      :file "drm_crtc_helper.h"
+      :fsize 9672
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_fb_helper.h"
+      :file "drm_fb_helper.h"
+      :fsize 12139
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_dp_mst_helper.h"
+      :file "drm_dp_mst_helper.h"
+      :fsize 14547
+      :lastmodtime '(22115 59023 751867 897000))
+    (semanticdb-table "drm_rect.h"
+      :file "drm_rect.h"
+      :fsize 5078
+      :lastmodtime '(22115 59023 755201 230000))
+    (semanticdb-table "drm_atomic.h"
+      :file "drm_atomic.h"
+      :fsize 6472
+      :lastmodtime '(22115 59023 751867 897000)))
+  :file "!home!marcus!git!linux!include!drm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,34 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables
+  (list
+    (semanticdb-table "sq.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("sqlite3.h" include (:system-flag t) nil [1 21])
+            ("stdio.h" include (:system-flag t) nil [22 40])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [51 56]))                  
+                :type "int")
+                nil [42 127]))          
+      :file "sq.c"
+      :pointmax 128
+      :fsize 127
+      :lastmodtime '(22088 62334 247467 546000)
+      :unmatched-syntax nil)
+    (semanticdb-table "2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [20 90]))          
+      :file "2.cpp"
+      :pointmax 91
+      :fsize 90
+      :lastmodtime '(22178 61608 40051 488000)
+      :unmatched-syntax nil)
+)
+  :file "!home!marcus!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

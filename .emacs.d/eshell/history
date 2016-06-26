@@ -1,0 +1,114 @@
+ls
+rockyou.txt.bz2
+screenfetch 
+fff
+cd .emacs.d/
+cd themes/
+d
+ls
+mv zenburn.el  zenburn-theme.el 
+g++ qt1.cpp -oqt1 -lqt5
+qmake-qt5 -project
+qmake
+ls
+sudo tlp start
+gcc 1.c  -o1
+./1
+gcc sq.c -o sq
+gcc sq.c -o sq -lsql
+gcc sq.c -o sq -lsqlite
+gcc sq.c -o sq -lsqlite3
+gpp 2.cpp -o 2
+g++ 2.cpp -o 2
+g++ 2.cpp -o 2
+javac j.java
+javac j.java
+gcc 1.c -o 1
+gcc 1.c -o 1
+./1
+make
+cd ..
+./autogen.sh 
+make
+cd src/
+./gmrun 
+cd ..
+make
+ls
+cd src/
+./gmrun 
+cd ..
+make
+make
+make
+src/gmrun 
+make
+src/gmrun 
+make
+make
+src/gmrun 
+make
+make
+xb
+make
+make
+make
+make
+src/gmrun 
+make
+make
+src/gmrun 
+make
+src/gmrun 
+make
+src/gmrun 
+python 1.py
+python 1.py
+lsmod
+sudo rmmod -f sdhci,sdhci_acpi,rtsx_usb_sdmmc
+sudo rmmod -f sdhci sdhci_acpi rtsx_usb_sdmmc
+sudo rmmod usbcore
+sudo rmmod --help
+exit
+d
+ls
+cat xorg.conf.new 
+cat xorg.conf.new 
+cd mp3/
+ls
+cd Born\ to\ Die\ \(Deluxe\ Version\)\ \[Bonus\ Track\ Version\]/
+d
+ls
+mpv 01\ Born\ to\ Die.mp3 
+cd ..
+ls
+cd ..
+ls
+cat strap.sh 
+ls
+dosbox
+ls
+google-drive-ocamlfuse gdrive/
+cd gdrive/
+cp garagem.7z ~/git/
+cd
+cd git/
+7za x garagem.7z -dgaragem
+7za x garagem.7z garagem
+cd garagem/
+ls
+sudo
+sudo pacman -R xorg-server
+sudo pacman -R  compiz-manjaro  hsetroot
+sudo pacman -R xorg-server
+sudo pacman -R xorg-serversudo pacman -R xorg-server
+sudo pacman --help
+man pacman
+sudo pacman -R xorg-server 
+sudo pacman -R --ignore=catalyst-total xorg-server
+htop
+gcc sq.c -o sq -Wall
+gcc sq.c -o sq -Wall -lsql
+gcc sq.c -o sq -Wall -lsqlite
+gcc sq.c -o sq -Wall -lsqlite3
+./sq

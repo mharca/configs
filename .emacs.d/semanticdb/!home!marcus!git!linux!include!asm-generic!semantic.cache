@@ -1,0 +1,115 @@
+;; Object asm-generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asm-generic/"
+  :tables
+  (list
+    (semanticdb-table "barrier.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__ASM_GENERIC_BARRIER_H" variable (:constant-flag t) nil [616 639])
+            ("linux/compiler.h" include (:system-flag t) nil [663 690])
+            ("nop" variable (:constant-flag t) nil [712 715])
+            ("mb" variable (:constant-flag t) nil [942 944])
+            ("rmb" variable (:constant-flag t) nil [985 988])
+            ("wmb" variable (:constant-flag t) nil [1024 1027])
+            ("dma_rmb" variable (:constant-flag t) nil [1067 1074])
+            ("dma_wmb" variable (:constant-flag t) nil [1115 1122])
+            ("read_barrier_depends" variable (:constant-flag t) nil [1176 1196])
+            ("__smp_mb" variable (:constant-flag t) nil [1250 1258])
+            ("__smp_rmb" variable (:constant-flag t) nil [1300 1309])
+            ("__smp_wmb" variable (:constant-flag t) nil [1352 1361])
+            ("__smp_read_barrier_depends" variable (:constant-flag t) nil [1421 1447])
+            ("smp_mb" variable (:constant-flag t) nil [1812 1818])
+            ("smp_rmb" variable (:constant-flag t) nil [1863 1870])
+            ("smp_wmb" variable (:constant-flag t) nil [1915 1922])
+            ("smp_read_barrier_depends" variable (:constant-flag t) nil [1984 2008])
+            ("__smp_store_mb" variable (:constant-flag t) nil [2092 2106])
+            ("__smp_mb__before_atomic" variable (:constant-flag t) nil [2221 2244])
+            ("__smp_mb__after_atomic" variable (:constant-flag t) nil [2305 2327])
+            ("__smp_store_release" variable (:constant-flag t) nil [2385 2404])
+            ("__smp_load_acquire" variable (:constant-flag t) nil [2577 2595])
+            ("smp_store_mb" variable (:constant-flag t) nil [3277 3289])
+            ("smp_mb__before_atomic" variable (:constant-flag t) nil [3401 3422])
+            ("smp_mb__after_atomic" variable (:constant-flag t) nil [3480 3500])
+            ("smp_store_release" variable (:constant-flag t) nil [3555 3572])
+            ("smp_load_acquire" variable (:constant-flag t) nil [3743 3759])
+            ("virt_mb" variable (:constant-flag t) nil [3999 4006])
+            ("virt_rmb" variable (:constant-flag t) nil [4028 4036])
+            ("virt_wmb" variable (:constant-flag t) nil [4059 4067])
+            ("virt_read_barrier_depends" variable (:constant-flag t) nil [4090 4115])
+            ("virt_store_mb" variable (:constant-flag t) nil [4155 4168])
+            ("virt_mb__before_atomic" variable (:constant-flag t) nil [4216 4238])
+            ("virt_mb__after_atomic" variable (:constant-flag t) nil [4275 4296])
+            ("virt_store_release" variable (:constant-flag t) nil [4332 4350])
+            ("virt_load_acquire" variable (:constant-flag t) nil [4391 4408]))          
+      :file "barrier.h"
+      :pointmax 4499
+      :fsize 4498
+      :lastmodtime '(22173 48051 774993 778000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__smp_mb__before_atomic" (spp-arg-list nil 2244 . 2246) . ((symbol "__smp_mb" 2247 . 2255) (semantic-list "()" 2255 . 2257)))
+          ("smp_store_mb" (spp-arg-list ("var" "value") 3289 . 3301) . 
+              ((DO "do" 3303 . 3305) (semantic-list "{ WRITE_ONCE(var, value); barrier(); }" 3306 . 3344) (WHILE "while" 3345 . 3350) (semantic-list "(0)" 3351 . 3354)))
+          ("wmb" (spp-arg-list nil 1027 . 1029) . ((symbol "mb" 1030 . 1032) (semantic-list "()" 1032 . 1034)))
+          ("__smp_mb" (spp-arg-list nil 1258 . 1260) . ((symbol "mb" 1261 . 1263) (semantic-list "()" 1263 . 1265)))
+          ("smp_rmb" (spp-arg-list nil 1870 . 1872) . ((symbol "barrier" 1873 . 1880) (semantic-list "()" 1880 . 1882)))
+          ("virt_read_barrier_depends" (spp-arg-list nil 4115 . 4117) . ((symbol "__smp_read_barrier_depends" 4118 . 4144) (semantic-list "()" 4144 . 4146)))
+          ("read_barrier_depends" (spp-arg-list nil 1196 . 1198) . 
+              ((DO "do" 1200 . 1202) (semantic-list "{ }" 1203 . 1206) (WHILE "while" 1207 . 1212) (semantic-list "(0)" 1213 . 1216)))
+          ("__smp_wmb" (spp-arg-list nil 1361 . 1363) . ((symbol "wmb" 1364 . 1367) (semantic-list "()" 1367 . 1369)))
+          ("__smp_store_mb" (spp-arg-list ("var" "value") 2106 . 2118) . 
+              ((DO "do" 2120 . 2122) (semantic-list "{ WRITE_ONCE(var, value); __smp_mb(); }" 2123 . 2162) (WHILE "while" 2163 . 2168) (semantic-list "(0)" 2169 . 2172)))
+          ("smp_load_acquire" (spp-arg-list ("p") 3759 . 3762) . ((semantic-list "({									\\
+	typeof(*p) ___p1 = READ_ONCE(*p);				\\
+	compiletime_assert_atomic_type(*p);				\\
+	barrier();							\\
+	___p1;								\\
+})" 3770 . 3904)))
+          ("nop" (spp-arg-list nil 715 . 717) . 
+              ((symbol "asm" 718 . 721) (VOLATILE "volatile" 722 . 730) (semantic-list "(\"nop\")" 731 . 738)))
+          ("virt_wmb" (spp-arg-list nil 4067 . 4069) . ((symbol "__smp_wmb" 4070 . 4079) (semantic-list "()" 4079 . 4081)))
+          ("dma_rmb" (spp-arg-list nil 1074 . 1076) . ((symbol "rmb" 1077 . 1080) (semantic-list "()" 1080 . 1082)))
+          ("__smp_mb__after_atomic" (spp-arg-list nil 2327 . 2329) . ((symbol "__smp_mb" 2330 . 2338) (semantic-list "()" 2338 . 2340)))
+          ("__smp_load_acquire" (spp-arg-list ("p") 2595 . 2598) . ((semantic-list "({									\\
+	typeof(*p) ___p1 = READ_ONCE(*p);				\\
+	compiletime_assert_atomic_type(*p);				\\
+	__smp_mb();							\\
+	___p1;								\\
+})" 2606 . 2741)))
+          ("virt_mb" (spp-arg-list nil 4006 . 4008) . ((symbol "__smp_mb" 4009 . 4017) (semantic-list "()" 4017 . 4019)))
+          ("virt_mb__before_atomic" (spp-arg-list nil 4238 . 4240) . ((symbol "__smp_mb__before_atomic" 4241 . 4264) (semantic-list "()" 4264 . 4266)))
+          ("virt_store_release" (spp-arg-list ("p" "v") 4350 . 4356) . ((symbol "__smp_store_release" 4357 . 4376) (semantic-list "(p, v)" 4376 . 4382)))
+          ("__ASM_GENERIC_BARRIER_H")
+          ("smp_wmb" (spp-arg-list nil 1922 . 1924) . ((symbol "barrier" 1925 . 1932) (semantic-list "()" 1932 . 1934)))
+          ("__smp_store_release" (spp-arg-list ("p" "v") 2404 . 2410) . 
+              ((DO "do" 2417 . 2419) (semantic-list "{									\\
+	compiletime_assert_atomic_type(*p);				\\
+	__smp_mb();							\\
+	WRITE_ONCE(*p, v);						\\
+}" 2420 . 2523) (WHILE "while" 2524 . 2529) (semantic-list "(0)" 2530 . 2533)))
+          ("rmb" (spp-arg-list nil 988 . 990) . ((symbol "mb" 991 . 993) (semantic-list "()" 993 . 995)))
+          ("smp_read_barrier_depends" (spp-arg-list nil 2008 . 2010) . 
+              ((DO "do" 2011 . 2013) (semantic-list "{ }" 2014 . 2017) (WHILE "while" 2018 . 2023) (semantic-list "(0)" 2024 . 2027)))
+          ("virt_store_mb" (spp-arg-list ("var" "value") 4168 . 4180) . ((symbol "__smp_store_mb" 4181 . 4195) (semantic-list "(var, value)" 4195 . 4207)))
+          ("virt_mb__after_atomic" (spp-arg-list nil 4296 . 4298) . ((symbol "__smp_mb__after_atomic" 4299 . 4321) (semantic-list "()" 4321 . 4323)))
+          ("mb" (spp-arg-list nil 944 . 946) . ((symbol "barrier" 947 . 954) (semantic-list "()" 954 . 956)))
+          ("__smp_read_barrier_depends" (spp-arg-list nil 1447 . 1449) . ((symbol "read_barrier_depends" 1450 . 1470) (semantic-list "()" 1470 . 1472)))
+          ("__smp_rmb" (spp-arg-list nil 1309 . 1311) . ((symbol "rmb" 1312 . 1315) (semantic-list "()" 1315 . 1317)))
+          ("smp_mb__after_atomic" (spp-arg-list nil 3500 . 3502) . ((symbol "barrier" 3503 . 3510) (semantic-list "()" 3510 . 3512)))
+          ("smp_mb" (spp-arg-list nil 1818 . 1820) . ((symbol "barrier" 1821 . 1828) (semantic-list "()" 1828 . 1830)))
+          ("smp_store_release" (spp-arg-list ("p" "v") 3572 . 3578) . 
+              ((DO "do" 3586 . 3588) (semantic-list "{									\\
+	compiletime_assert_atomic_type(*p);				\\
+	barrier();							\\
+	WRITE_ONCE(*p, v);						\\
+}" 3589 . 3691) (WHILE "while" 3692 . 3697) (semantic-list "(0)" 3698 . 3701)))
+          ("dma_wmb" (spp-arg-list nil 1122 . 1124) . ((symbol "wmb" 1125 . 1128) (semantic-list "()" 1128 . 1130)))
+          ("smp_mb__before_atomic" (spp-arg-list nil 3422 . 3424) . ((symbol "barrier" 3425 . 3432) (semantic-list "()" 3432 . 3434)))
+          ("virt_rmb" (spp-arg-list nil 4036 . 4038) . ((symbol "__smp_rmb" 4039 . 4048) (semantic-list "()" 4048 . 4050)))
+          ("virt_load_acquire" (spp-arg-list ("p") 4408 . 4411) . ((symbol "__smp_load_acquire" 4412 . 4430) (semantic-list "(p)" 4430 . 4433)))
+          )
+))
+  :file "!home!marcus!git!linux!include!asm-generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

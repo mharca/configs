@@ -1,0 +1,100 @@
+;; Object acpi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "acpi/"
+  :tables
+  (list
+    (semanticdb-table "acpi.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__ACPI_H__" variable (:constant-flag t) nil [2148 2158])
+            ("acpi/platform/acenv.h" include (:system-flag t) nil [2480 2512])
+            ("acpi/acnames.h" include (:system-flag t) nil [2546 2571])
+            ("acpi/actypes.h" include (:system-flag t) nil [2609 2634])
+            ("acpi/acexcep.h" include (:system-flag t) nil [2675 2700])
+            ("acpi/actbl.h" include (:system-flag t) nil [2726 2749])
+            ("acpi/acoutput.h" include (:system-flag t) nil [2780 2806])
+            ("acpi/acrestyp.h" include (:system-flag t) nil [2844 2870])
+            ("acpi/acpiosxf.h" include (:system-flag t) nil [2906 2932])
+            ("acpi/acpixf.h" include (:system-flag t) nil [2970 2994])
+            ("acpi/platform/acenvex.h" include (:system-flag t) nil [3042 3076]))          
+      :file "acpi.h"
+      :pointmax 3144
+      :fsize 3143
+      :lastmodtime '(22115 59023 741867 896000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ACPI_H__")
+          )
+)
+    (semanticdb-table "acpi_io.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_ACPI_IO_H_" variable (:constant-flag t) nil [29 40])
+            ("linux/io.h" include (:system-flag t) nil [42 63])
+            ("asm/acpi.h" include (:system-flag t) nil [65 86])
+            ("acpi_os_ioremap" function
+               (:pointer 1
+                :arguments 
+                  ( ("phys" variable (:type ("acpi_physical_address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156 183])
+                    ("size" variable (:type ("acpi_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [193 208]))                  
+                :type ("__iomem" type (:type "class") nil nil))
+                nil [131 253])
+            ("acpi_os_map_iomem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("phys" variable (:type ("acpi_physical_address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [307 334])
+                    ("size" variable (:type ("acpi_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [335 350]))                  
+                :type ("__init_refok" type (:type "class") nil nil))
+                nil [276 351])
+            ("acpi_os_unmap_iomem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("__iomem" variable (:type "void") (reparse-symbol arg-sub-list) [383 397])
+                    ("" variable (:type ("virt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [397 402])
+                    ("size" variable (:type ("acpi_size" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [403 418]))                  
+                :type ("__ref" type (:type "class") nil nil))
+                nil [357 419])
+            ("acpi_os_get_iomem" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("phys" variable (:type ("acpi_physical_address" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [452 479])
+                    ("size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [480 498]))                  
+                :type ("__iomem" type (:type "class") nil nil))
+                nil [425 499])
+            ("acpi_os_map_generic_address" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type ("acpi_generic_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [533 567]))                  
+                :type "int")
+                nil [501 568])
+            ("acpi_os_unmap_generic_address" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :type ("acpi_generic_address" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [604 638]))                  
+                :type "void")
+                nil [569 639]))          
+      :file "acpi_io.h"
+      :pointmax 648
+      :fsize 647
+      :lastmodtime '(22115 59023 741867 896000)
+      :unmatched-syntax '((VOID 420 . 424) (punctuation 396 . 397) (VOID 352 . 356) (punctuation 275 . 276) (symbol 267 . 274) (VOID 262 . 266) (VOID 126 . 130) (INLINE 119 . 125) (STATIC 112 . 118))
+      :lexical-table 
+        '(("_ACPI_IO_H_")
+          )
+))
+  :file "!home!marcus!git!linux!include!acpi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
