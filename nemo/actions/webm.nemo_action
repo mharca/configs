@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=webm
+Comment=webm
+
+Exec=urxvt -e sh -c "ffmpeg -i %F %F.webm"
+
+Icon-Name=bug-buddy
+
+Selection=Any
+
+Extensions=mpg;mpeg;mp4;flv;m4v;avi;

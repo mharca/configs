@@ -1,0 +1,55 @@
+[Nemo Action]
+
+Name=Desktop _Settings
+
+Comment=Change how your desktop works
+
+Exec=cinnamon-settings desktop
+
+Selection=None
+
+Icon-Name=cs-desktop
+
+Extensions=any;
+
+Dependencies=cinnamon-settings;
+
+Conditions=desktop;dbus org.Cinnamon;
+
+Name[pt]=Definiçõe_s do Ambiente de Trabalho
+Name[tr]=Masaüstü _Ayarları
+Name[de]=_Schreibtischeinstellungen
+Name[bg]=_Настройки на десктопа
+Name[fr]=_Paramètres de bureau
+Name[hr]=Postavke _radne površine
+Name[ko]=바탕화면 설정(_S)
+Name[uk]=Налаштування _стільниці
+Name[es]=_Configuración del escritorio
+Name[pt_BR]=Configurações_Desktop
+Name[ru]=Настройка рабочего стола
+Name[sk]=_Nastavenia pracovnej plochy
+Name[sv]=Skrivbords _Inställningar
+Name[pl]=_Ustawienia pulpitu
+Name[hu]=Asztal _beállítások
+Name[da]=_Skrivebordsindstillinger
+Name[nl]=Instellingen van werkomgeving
+Name[zh_HK]=桌面設定(_S)
+Name[ca]=_Configuració de l'escriptori
+Comment[pt]=Muda como o ambiente de trabalho funciona
+Comment[tr]=Masaüstünüzün nasıl olacağını belirler
+Comment[de]=Die Arbeitsweise des Schreibtischs ändern
+Comment[bg]=Промени работата на десктопа
+Comment[fr]=Modifier le fonctionnement de votre bureau
+Comment[hr]=Promijenite način rada vaše radne površine
+Comment[ko]=바탕화면 작업 방식을 변경합니다
+Comment[uk]=Змінити як Вашу стільницю
+Comment[es]=Cambia el funcionamiento del escritorio
+Comment[pt_BR]=Alterar como funciona a sua área de trabalho
+Comment[ru]=Изменить как ваш рабочий стол
+Comment[sk]=Zmení fungovanie vašej pracovnej plochy
+Comment[sv]=Ändra hur ditt skrivbord fungerar
+Comment[pl]=Zmień sposób działania pulpitu
+Comment[hu]=Asztal működésének megáltoztatása
+Comment[da]=Ændrer dit skrivebords virkemåde
+Comment[nl]=Verander hoe uw werkomgeving werkt
+Comment[ca]=Canvia el funcionament de l'escriptori

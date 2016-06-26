@@ -1,0 +1,11 @@
+[Nemo Action]
+Name=Strip
+Comment=Strip
+
+Exec=gnome-terminal -x sh -c "convert -strip %F %F.jpg"
+
+Icon-Name=bug-buddy
+
+Selection=Any
+
+Extensions=jpeg;jpg;jpe;

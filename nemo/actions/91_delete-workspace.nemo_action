@@ -1,0 +1,95 @@
+[Nemo Action]
+
+Name=Remove workspace
+
+Comment=Remove the currently active workspace
+
+Exec=sh -c 'dbus-send --dest=org.Cinnamon --print-reply /org/Cinnamon org.Cinnamon.RemoveCurrentWorkspace >/dev/null'
+
+Selection=None
+
+Extensions=any;
+
+Conditions=desktop;dbus org.Cinnamon;gsettings org.cinnamon number-workspaces i gt 1;
+
+Active=false
+
+Name[th]=ลบพื้นที่ทำงาน
+Name[ia]=Remover le spatio de labor
+Name[it]=Rimuovi spazio di lavoro
+Name[pt]=Remover área de trabalho
+Name[gd]=Thoir an rum-obrach air falbh
+Name[is]=Fjarlægja vinnusvæði
+Name[fi]=Poista työtila
+Name[zh_TW]=移除工作區
+Name[cs]=Odstranit pracovní plochu
+Name[tr]=Çalışma alanını sil
+Name[cy]=Dileu gweithle
+Name[de]=Arbeitsfläche entfernen
+Name[bg]=Премахване на работно място
+Name[fr]=Supprimer l'espace de travail
+Name[hr]=Prikaži tipku idi na sljedeću lokaciju
+Name[ro]=Elimină spaţiu de lucru
+Name[ko]=작업 공간 제거
+Name[eu]=Kendu laneko area
+Name[ta]=பணிதளத்தை நீக்கு
+Name[uk]=Вилучити робочий простір
+Name[es]=Eliminar espacio de trabajo
+Name[pt_BR]=Remover espaço de trabalho
+Name[ru]=Удалить рабочее место
+Name[sk]=Odstrániě pracovnú plochu
+Name[gl]=Eliminar o espazo de traballo
+Name[sv]=Ta bort arbetsyta
+Name[ja]=ワークスペースの削除
+Name[pl]=Usuń przestrzeń roboczą
+Name[hu]=Munkaterület eltávolítása
+Name[ms]=Hapus kawasan kerja
+Name[el]=Απομακρύνση/Αφαίρεση του χώρου εργασίας
+Name[da]=Fjern arbejdsområde
+Name[nl]=Werkblad verwijderen
+Name[vi]=Bỏ vùng làm việc
+Name[zh_HK]=移除工作區
+Name[zh_CN]=移除工作区
+Name[sr]=Уклони радни простор
+Name[lt]=Šalinti darbo sritį
+Name[ca]=Elimina espai de treball
+Name[en_GB]=Remove workspace
+Comment[th]=ลบพื้นที่ทำงานที่ใช้งานอยู่ตอนนี้
+Comment[ia]=Remover le spatio de labor currentemente active
+Comment[it]=Rimuovi lo spazio di lavoro corrente
+Comment[pt]=Remover a área de trabalho activa no momento
+Comment[gd]=Thoir air falbh an rum-obrach a tha gnìomhach an-dràsta
+Comment[is]=Fjarlægja vinnusvæðið sem er virkt núna
+Comment[fi]=Poista nykyinen aktiivinen työtila
+Comment[zh_TW]=移除目前使用中的工作區
+Comment[cs]=Odstranit aktuálně aktivní pracovní plochu
+Comment[tr]=Şu an aktif olan çalışma alanını sil
+Comment[cy]=Tynnu gweithle gweithredol cyfredol
+Comment[de]=Die aktuell aktive Arbeitsfläche entfernen
+Comment[bg]=Премахване на актовното работно място
+Comment[fr]=Supprimer l'espace de travail actif
+Comment[hr]=Ukloni trenutno aktivni radni prostor
+Comment[ro]=Elimină spaţiul de lucru activ în acest moment
+Comment[ko]=현재 사용 중인 작업 공간을 제거합니다
+Comment[eu]=Kendu uneko laneko area aktiboa
+Comment[uk]=Вилучити поточний робочий простір
+Comment[es]=Eliminar el espacio de trabajo activo
+Comment[pt_BR]=Remova o espaço de trabalho ativo no momento
+Comment[ru]=Удалить текущее рабочее место
+Comment[sk]=Odstrániť momentálne aktívnu plochu
+Comment[gl]=Eliminar o espazo de traballo activo
+Comment[sv]=Ta bort den nuvarande aktiva arbetsytan
+Comment[ja]=現在のアクティブなワークスペースの削除
+Comment[pl]=Usuń obecnie aktywną przestrzeń roboczą
+Comment[hu]=Aktív munkaterület eltávolítása
+Comment[ms]=Hapus kawasan kerja semasa
+Comment[el]=Απομακρύνση/Αφαίρεση του τρέχοντος ενεργού χώρου εργασίας
+Comment[da]=Fjern det nuværende aktive arbejdsområde
+Comment[nl]=Verwijder het thans actieve werkblad
+Comment[vi]=Bỏ vùng làm việc hiện hoạt
+Comment[zh_HK]=移除目前作用中的工作區
+Comment[zh_CN]=移除当前活跃的工作区
+Comment[sr]=Уклоните тренутно активан радни простор
+Comment[lt]=Šalinti esamą aktyvią darbo sritį
+Comment[ca]=Elimina l'espai de treball actiu
+Comment[en_GB]=Remove the currently active workspace
