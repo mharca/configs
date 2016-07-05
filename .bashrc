@@ -11,7 +11,7 @@ alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 #PS1="\[\e[34m\]\u\[\e[m\]@\[\e[32m\]\h\[\e[m\]:\w "
 if [ "$HOSTNAME" = "asus" ];then
-    PS1="\[\e[34m\]\u\[\e[m\]@\[\e[33;40m\]\h\[\e[m\]:\w"
+    PS1="\[\e[34m\]\u\[\e[m\]@\[\e[33;40m\]\h\[\e[m\]:\w "
 else if [ "$HOSTNAME" = "dell" ];then
 	 PS1="\[\e[34m\]\u\[\e[m\]@\[\e[31m\]\h\[\e[m\]:\w "
      else if [ "$HOSTNAME" = "laptop" ];then
