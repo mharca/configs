@@ -3,6 +3,7 @@
 (require 'package)
 ; add MELPA to repository list
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+
 ; initialize package.el
 (package-initialize)
 
@@ -50,15 +51,19 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(c-basic-offset 8)
- '(custom-enabled-themes (quote (wheatgrass)))
+ '(custom-enabled-themes (quote (zenburn)))
+ '(custom-safe-themes
+   (quote
+    ("68d36308fc6e7395f7e6355f92c1dd9029c7a672cbecf8048e2933a053cf27e6" default)))
  '(inhibit-startup-screen t)
- '(setq c-default-style "k&r"))
+ '(setq c-default-style)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Liberation Mono" :foundry "unknown" :slant normal :weight normal :height 107 :width normal)))))
+(global-set-key [f8] 'neotree-toggle)
+
